@@ -54,6 +54,7 @@ All colors MUST be HSL.
     --surface-elevated: 36 44% 98%;
     --shadow-soft: 0 0% 0%;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --brand: 174 100% 37%;
   }
 
   .dark {
