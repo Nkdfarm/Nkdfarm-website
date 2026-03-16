@@ -8,9 +8,9 @@ const HeroSection = () => {
         {/* Left side - Image */}
         <div className="relative aspect-[4/3] md:aspect-auto rounded-[2rem] overflow-hidden animate-scale-in">
           <img
-            src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=1920&q=80"
+
             alt="Hero"
-            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="/lovable-uploads/f69dd2f0-bf72-4901-a316-05dc81956ab1.png" />
           
         </div>
 
