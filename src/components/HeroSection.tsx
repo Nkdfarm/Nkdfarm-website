@@ -21,7 +21,7 @@ const HeroSection = () => {
               It is time to change
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Foods can no longer globe-trot through our dystopian world We have a solution
+              Foods can no longer globe-trot through our dystopian world
               <br />
               <br />
               Grow close to cities
