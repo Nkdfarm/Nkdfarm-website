@@ -17,12 +17,20 @@ const HeroSection = () => {
         {/* Right side - Content */}
         <div className="flex flex-col justify-center space-y-6 md:space-y-8">
           <div className="space-y-4 md:space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">Time to change
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">It is time to change
 
             </h1>
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Welcome to Perspective's Blog: A Realm of Reflection, Inspiration, and Discovery. Where Words Illuminate
-              Paths of Meaning and Thoughts Unravel the Mysteries of Life's Spectrum.
+            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">Foods can no longer globe-trot through our dystopian world.
+
+
+We must return to our roots: rebuilding city green belts with ruthless efficiency and profitability.
+
+
+We have the solution.  
+
+
+
+
             </p>
           </div>
 
@@ -32,24 +40,16 @@ const HeroSection = () => {
             </Button>
 
             <div className="flex items-center gap-4">
-              <a
-                href="#instagram"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="Instagram">
+              <a href="#instagram" className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110" aria-label="Instagram">
                 
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
-                href="#facebook"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="Facebook">
+              <a href="#facebook" className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110" aria-label="Facebook">
                 
                 <Facebook className="w-5 h-5" />
               </a>
-              <a
-                href="#linkedin"
-                className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-                aria-label="LinkedIn">
+              <a href="#linkedin" className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
+              aria-label="LinkedIn">
                 
                 <Linkedin className="w-5 h-5" />
               </a>
