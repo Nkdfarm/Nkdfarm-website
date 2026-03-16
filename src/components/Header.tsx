@@ -77,7 +77,7 @@ const Header = () => {
             </button>
             
             <Button className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-2 hover:scale-105 transition-all">
-              Join Now
+              Contact
             </Button>
 
             {/* Mobile Menu Button */}
