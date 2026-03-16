@@ -7,7 +7,7 @@ const heroLines = [
   "Grow close to cities",
   "Maximize yield, minimize waste Profitability redefined",
   "",
-  "We have an answer",
+  "We have a solution",
   "",
 ];
 
