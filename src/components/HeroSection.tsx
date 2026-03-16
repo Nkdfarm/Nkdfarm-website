@@ -8,6 +8,8 @@ const heroLines = [
   "Maximize yield, minimize waste Profitability redefined",
   "",
   "We have an answer",
+  "",
+  "",
 ];
 
 const HeroSection = () => {
