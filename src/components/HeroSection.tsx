@@ -26,7 +26,6 @@ const HeroSection = () => {
               <br />
               Grow close to cities
               <br />
-              <br />
               Maximize yield, minimize waste
               <br />
               Profitability redefined
