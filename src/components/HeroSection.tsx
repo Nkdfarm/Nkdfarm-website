@@ -20,15 +20,15 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">It is time to change
 
             </h1>
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">Foods can no longer globe-trot through our dystopian world.
+            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">Foods can no longer globe-trot through our dystopian world
 
 
-We must return to our roots: rebuilding city green belts with ruthless efficiency and profitability.
+Return to roots
+Grow close to cities
+Maximize yield, minimize waste Profitability redefined
 
 
-We have the solution.  
-
-
+We have a solution 
 
 
             </p>
@@ -36,7 +36,7 @@ We have the solution.  
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 pt-4 animate-slide-up stagger-2">
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-4 md:px-10 md:py-6 text-base font-medium transition-all hover:scale-105 w-full sm:w-auto">
-              Discover
+              Discover the solution now  
             </Button>
 
             <div className="flex items-center gap-4">
