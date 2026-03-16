@@ -9,7 +9,6 @@ const heroLines = [
   "",
   "We have an answer",
   "",
-  "",
 ];
 
 const HeroSection = () => {
