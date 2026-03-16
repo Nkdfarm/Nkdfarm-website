@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 
-const heroDescription =
-  "Foods can no longer globe-trot through our dystopian world. Return to roots, grow close to cities, maximize yield, minimize waste. Profitability redefined — we have an answer.";
+const heroLines = [
+  "Foods can no longer globe-trot through our dystopian world",
+  "",
+  "Return to roots",
+  "Grow close to cities",
+  "Maximize yield, minimize waste Profitability redefined",
+  "",
+  "We have an answer.",
+];
 
 const HeroSection = () => {
   return (
@@ -23,7 +30,15 @@ const HeroSection = () => {
               It is time to change
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              <span>{heroDescription}</span>
+              <span>
+                {heroLines.map((line, i) =>
+                  line === "" ? (
+                    <span key={i} className="block h-4" />
+                  ) : (
+                    <span key={i} className="block">{line}</span>
+                  )
+                )}
+              </span>
             </p>
           </div>
 
