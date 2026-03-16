@@ -10,8 +10,8 @@ const HeroSection = () => {
           <img
             alt="Hero"
             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-            src="/lovable-uploads/f69dd2f0-bf72-4901-a316-05dc81956ab1.png"
-          />
+            src="/lovable-uploads/f69dd2f0-bf72-4901-a316-05dc81956ab1.png" />
+          
         </div>
 
         {/* Right side - Content */}
@@ -20,8 +20,15 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">
               It is time to change
             </h1>
-            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Foods can no longer globe-trot through our dystopian world
+            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">Foods can no longer globe-trot through our dystopian world
+
+Return to roots
+Grow close to cities
+Maximize yield, minimize waste
+Profitability redefined
+
+
+We have an answer
               <br />
               <br />
               Grow close to cities
@@ -39,7 +46,4 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
-};
-export default HeroSection;
+    </section>);};export default HeroSection;
