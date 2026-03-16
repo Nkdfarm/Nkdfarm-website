@@ -30,7 +30,15 @@ const HeroSection = () => {
               It is time to change
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              <span>{heroDescription}</span>
+              <span>
+                {heroLines.map((line, i) =>
+                  line === "" ? (
+                    <span key={i} className="block h-4" />
+                  ) : (
+                    <span key={i} className="block">{line}</span>
+                  )
+                )}
+              </span>
             </p>
           </div>
 
