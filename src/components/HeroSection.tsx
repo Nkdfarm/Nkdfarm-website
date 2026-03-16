@@ -38,13 +38,6 @@ const HeroSection = () => {
               Discover the solution now  
             </Button>
 
-            <div className="flex items-center gap-4">
-              <a href="#linkedin" className="w-12 h-12 rounded-full border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110"
-              aria-label="LinkedIn">
-                
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
