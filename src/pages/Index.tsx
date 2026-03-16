@@ -28,11 +28,11 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredArticles.map((article, index) => (
-              <div key={article.id} className={`animate-slide-up stagger-${Math.min(index + 1, 6)}`}>
+            {featuredArticles.map((article, index) =>
+            <div key={article.id} className={`animate-slide-up stagger-${Math.min(index + 1, 6)}`}>
                 <ArticleCard {...article} size="small" />
               </div>
-            ))}
+            )}
           </div>
         </section>
 
@@ -47,8 +47,8 @@ const Index = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-6 py-4 rounded-full border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring transition-all"
-              />
+                className="flex-1 px-6 py-4 rounded-full border border-input bg-background focus:outline-none focus:ring-2 focus:ring-ring transition-all" />
+              
               <button className="px-10 py-4 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:scale-105 transition-all">
                 Subscribe
               </button>
@@ -94,12 +94,12 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-            <p>© 2025 Perspective. All rights reserved.</p>
+            <p>© 2026 Naked Farms. All rights reserved.</p>
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
