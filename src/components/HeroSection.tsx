@@ -1,5 +1,7 @@
-import { Instagram, Facebook, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const heroDescription =
+  "Foods can no longer globe-trot through our dystopian world. Return to roots, grow close to cities, maximize yield, minimize waste. Profitability redefined — we have an answer.";
 
 const HeroSection = () => {
   return (
@@ -21,8 +23,7 @@ const HeroSection = () => {
               It is time to change
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
-              Foods can no longer globe-trot through our dystopian world Return to roots Grow close to cities Maximize
-              yield, minimize waste Profitability redefined We have an answer
+              <span>{heroDescription}</span>
             </p>
           </div>
 
@@ -36,4 +37,5 @@ const HeroSection = () => {
     </section>
   );
 };
+
 export default HeroSection;
