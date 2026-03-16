@@ -20,12 +20,28 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight animate-slide-down">It is time to change
 
             </h1>
-            <div className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1 space-y-4">
-              <p>Return to roots</p>
-              <p>Grow close to cities</p>
-              <p>Maximize yield, minimize waste</p>
-              <p>Profitability redefined</p>
-            </div>
+            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">Foods can no longer globe-trot through our dystopian world
+Return to roots
+Grow close to cities
+Maximize yield, minimize waste
+Profitability redefined
+We have a solution
+
+
+
+
+
+
+
+              <br /><br />
+              Return to roots
+              <br /><br />
+              Grow close to cities
+              <br /><br />
+              Maximize yield, minimize waste
+              <br />
+              Profitability redefined
+            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 pt-4 animate-slide-up stagger-2">
