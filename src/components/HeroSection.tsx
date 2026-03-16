@@ -23,9 +23,7 @@ const HeroSection = () => {
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
               Return to roots
               <br />
-              <br />
               Grow close to cities
-              <br />
               <br />
               Maximize yield, minimize waste
               <br />
