@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 
-const heroDescription =
-  "Foods can no longer globe-trot through our dystopian world. Return to roots, grow close to cities, maximize yield, minimize waste. Profitability redefined — we have an answer.";
+const heroLines = [
+  "Foods can no longer globe-trot through our dystopian world",
+  "",
+  "Return to roots",
+  "Grow close to cities",
+  "Maximize yield, minimize waste Profitability redefined",
+  "",
+  "We have an answer.",
+];
 
 const HeroSection = () => {
   return (
