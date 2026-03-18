@@ -42,8 +42,8 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              We believe that how we see the world shapes how we experience it. Perspective is dedicated to 
-              offering fresh viewpoints, practical insights, and inspiring stories that help readers:
+
+
             </p>
             <ul className="space-y-3 ml-6">
               <li className="flex items-start">
