@@ -28,7 +28,7 @@ const Authors = () => {
     name: "David Kim",
     role: "Personal Growth Writer",
     bio: "David combines insights from psychology, philosophy, and personal experience to explore what it means to live intentionally. His thoughtful approach to growth emphasizes progress over perfection.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+    image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
     articles: 27
   }];
 
