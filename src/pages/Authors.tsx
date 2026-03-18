@@ -18,8 +18,8 @@ const Authors = () => {
     articles: 31
   },
   {
-    name: "Sofia Rodriguez",
-    role: "Creativity Columnist",
+    name: "Francesco Gaudioso",
+    role: "CTO",
     bio: "Sofia is a multidisciplinary artist and creative consultant who helps individuals and teams unlock their creative potential. She's passionate about making creativity accessible to everyone, not just 'artists.'",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
     articles: 19
