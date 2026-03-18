@@ -120,17 +120,7 @@ const Privacy = () => {
             </p>
           </section>
 
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-            <p className="text-muted-foreground">If you have any questions about this Privacy Policy, please contact 
 
-            </p>
-            <p className="text-muted-foreground mt-4">
-
-              <br />
-              Address: San Francisco, CA
-            </p>
-          </section>
         </div>
       </main>
     </div>);
