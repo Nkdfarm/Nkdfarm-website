@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const FarmBox = () => {
   return (
@@ -9,7 +8,6 @@ const FarmBox = () => {
         <h1 className="text-4xl md:text-5xl font-bold font-serif mb-6">FarmBox</h1>
         <p className="text-lg text-muted-foreground">Coming soon.</p>
       </main>
-      <Footer />
     </div>
   );
 };
