@@ -28,9 +28,9 @@ const boardMembers = [
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
   },
   {
-    name: "Natalia",
-    role: "Market Analyst",
-    bio: "",
+    name: "Natalia Ozerova-Jones",
+    role: "Test",
+    bio: "test",
     image: "/lovable-uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
   },
   {
