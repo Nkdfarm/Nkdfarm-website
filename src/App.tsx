@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import StyleGuide from "./pages/StyleGuide";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import FarmBox from "./pages/FarmBox";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/article/:id" element={<Article />} />
+          <Route path="/farmbox" element={<FarmBox />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/travel" element={<Travel />} />
           <Route path="/creativity" element={<Creativity />} />
