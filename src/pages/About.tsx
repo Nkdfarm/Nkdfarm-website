@@ -31,7 +31,7 @@ const boardMembers = [
     name: "Natalia",
     role: "Market Analyst",
     bio: "",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+    image: "/lovable-uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
   },
   {
     name: "Robbie",
