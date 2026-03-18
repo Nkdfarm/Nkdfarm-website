@@ -18,7 +18,7 @@ const boardMembers = [
   {
     name: "Francesco Gaudioso",
     role: "Head of Technology",
-    bio: "Sofia is a multidisciplinary artist and creative consultant who helps individuals and teams unlock their creative potential. She's passionate about making creativity accessible to everyone, not just 'artists.'",
+    bio: "Mechanical and Energy Engineer driving innovation across OEM projects, off-grid tech, and ocean adventures.",
     image: "/lovable-uploads/3ad422b8-63a9-49e7-96ea-52557ec23949.jpg",
   },
   {
