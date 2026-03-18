@@ -27,9 +27,14 @@ const About = () => {
           <p>
             Toau, an almost wild atoll in the middle of the Pacific, showed us our complete dependence on complex global
             food logistics for fresh produce. Strangely, that uneasy feeling of vulnerability followed us back to the
-            big city, triggered by origin tags in everyday supermarkets. A pivotal meeting with Meiny Prins revealed the
-            harsh reality of current food production. Bringing sustainable farming back to urban areas solves a cascade
-            of social and environmental challenges. That's when Naked Farms was born.
+            big city, triggered by origin tags in everyday supermarkets.
+          </p>
+          <p>
+            A pivotal meeting with Meiny Prins revealed the harsh reality of current food production. Bringing sustainable farming back to urban areas solves a cascade
+            of social and environmental challenges.
+          </p>
+          <p>
+            That's when Naked Farms was born.
           </p>
         </section>
 
