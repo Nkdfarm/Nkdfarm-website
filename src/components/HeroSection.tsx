@@ -8,7 +8,7 @@ const heroLines = [
 "Maximize yield, minimize waste",
 "Profitability redefined",
 "",
-"We have a solution",
+"",
 ""];
 
 
