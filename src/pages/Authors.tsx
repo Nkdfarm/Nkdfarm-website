@@ -21,7 +21,7 @@ const Authors = () => {
     name: "Francesco Gaudioso",
     role: "CTO",
     bio: "Sofia is a multidisciplinary artist and creative consultant who helps individuals and teams unlock their creative potential. She's passionate about making creativity accessible to everyone, not just 'artists.'",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+    image: "/lovable-uploads/3ad422b8-63a9-49e7-96ea-52557ec23949.jpg",
     articles: 19
   },
   {
