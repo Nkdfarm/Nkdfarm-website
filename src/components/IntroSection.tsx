@@ -3,7 +3,7 @@ const IntroSection = () => {
     <section className="max-w-4xl mx-auto py-12 md:py-16 px-4 animate-fade-in">
       <div className="text-center space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold leading-tight animate-slide-up"><span className="text-[hsl(var(--brand-accent))]">Naked</span> Farms pioneers agritech franchising for city food system revival</h2>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-slide-up stagger-1">Powering a new generation of farmers with tech and services for sustainable, local food businesses
+        <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-slide-up stagger-1">Powering a new generation of farmers with tech and services for sustainable food
 
 
 
