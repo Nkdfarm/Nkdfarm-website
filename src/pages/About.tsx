@@ -99,7 +99,7 @@ const About = () => {
 
         {/* Mission Copy Section */}
         <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 className="text-3xl font-bold mb-6">Vision</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
 
