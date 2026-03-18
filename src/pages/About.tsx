@@ -51,7 +51,7 @@ const About = () => {
                 <span>Solve the global food challenge by bringing food production closer to where it’s consumed.</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
+                
                 
               </li>
               
