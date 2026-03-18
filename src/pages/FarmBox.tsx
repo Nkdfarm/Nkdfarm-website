@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
+import farmboxHero from "@/assets/farmbox-hero.png";
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap');
@@ -393,6 +394,10 @@ export default function FarmBox() {
       <Header />
       <div className="fb-root">
         <div className="fb-page">
+          {/* HERO IMAGE */}
+          <div style={{ marginBottom: 48, borderRadius: 8, overflow: 'hidden', border: '1px solid var(--rule)' }}>
+            <img src={farmboxHero} alt="The Farmbox Solution — A 4,000 sq.m Blueprint for Urban Food Sovereignty" style={{ width: '100%', display: 'block' }} />
+          </div>
 
           {/* HEADER */}
           <div className="fb-header">
