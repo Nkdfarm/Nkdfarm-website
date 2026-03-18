@@ -38,64 +38,26 @@ const About = () => {
         </section>
 
         {/* Mission Section */}
-        <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-          <div className="space-y-4 text-muted-foreground">
-            <p>
-
-
-            </p>
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start">
-                
-                <span>Solve the global food challenge by bringing food production closer to where it’s consumed.</span>
-              </li>
-              <li className="flex items-start">
-                
-                
-              </li>
-              
-
-
-              
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Embrace personal growth as a lifelong journey</span>
-              </li>
-            </ul>
+        <section className="mb-16 rounded-2xl bg-card p-8 md:p-12 animate-slide-up">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Our Mission</h2>
+          <p className="text-muted-foreground mb-8 text-lg">
+            We believe the future of food lies in growing closer to where it's consumed — sustainably, efficiently, and profitably.
+          </p>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { icon: "🌱", title: "Return to Origins", desc: "Reconnect communities with locally grown, nutrient-rich food." },
+              { icon: "🏙️", title: "Grow Close to Cities", desc: "Bring food production to urban environments, reducing transport and emissions." },
+              { icon: "♻️", title: "Minimize Waste", desc: "Maximize yield through precision agriculture while eliminating unnecessary waste." },
+              { icon: "📈", title: "Redefine Profitability", desc: "Prove that sustainable farming is not just viable — it's the smarter investment." },
+            ].map((item) => (
+              <div key={item.title} className="rounded-xl border border-border bg-background p-6 space-y-2">
+                <span className="text-2xl">{item.icon}</span>
+                <h3 className="font-semibold text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </section>
-
-        {/* Values Section */}
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
 
         {/* CTA Section */}
         <section className="text-center py-12 rounded-2xl bg-card">
