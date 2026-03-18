@@ -25,8 +25,8 @@ const Authors = () => {
     articles: 19
   },
   {
-    name: "David Kim",
-    role: "Personal Growth Writer",
+    name: "Frederick Steinmeyer",
+    role: "Head of Life",
     bio: "David combines insights from psychology, philosophy, and personal experience to explore what it means to live intentionally. His thoughtful approach to growth emphasizes progress over perfection.",
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
     articles: 27
