@@ -27,6 +27,18 @@ const boardMembers = [
     bio: "David combines insights from psychology, philosophy, and personal experience to explore what it means to live intentionally. His thoughtful approach to growth emphasizes progress over perfection.",
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
   },
+  {
+    name: "Natalia",
+    role: "Market Analyst",
+    bio: "",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+  },
+  {
+    name: "Robbie",
+    role: "Chief Financial Officer",
+    bio: "",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
+  },
 ];
 
 const About = () => {
