@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import toaAtoll from "@/assets/toa-atoll.jpg";
 
 const About = () => {
   return (
@@ -17,6 +18,11 @@ const About = () => {
 
           
         </div>
+
+        {/* Atoll Image Section */}
+        <section className="mb-16 rounded-2xl overflow-hidden">
+          <img src={toaAtoll} alt="Aerial view of Toa atoll in French Polynesia" className="w-full h-auto object-cover rounded-2xl" />
+        </section>
 
         {/* Story Section */}
         <section className="mb-16 space-y-6 text-muted-foreground animate-slide-up stagger-2">
@@ -37,36 +43,8 @@ const About = () => {
           </p>
         </section>
 
-        {/* Mission Section */}
-        <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-          <div className="space-y-4 text-muted-foreground">
-            <p>
 
 
-            </p>
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start">
-                
-                <span>Solve the global food challenge by bringing food production closer to where it’s consumed.</span>
-              </li>
-              <li className="flex items-start">
-                
-                
-              </li>
-              
-
-
-              
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Values Section */}
         
 
 
