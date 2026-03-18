@@ -11,17 +11,17 @@ const Privacy = () => {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight animate-slide-down">
             Privacy Policy
           </h1>
-          <p className="text-muted-foreground animate-slide-up stagger-1">
-            Last updated: March 20, 2025
+          <p className="text-muted-foreground animate-slide-up stagger-1">Last updated: March 18, 2026
+
           </p>
         </div>
 
         <div className="prose prose-lg max-w-none space-y-8">
           <section>
             <h2 className="text-2xl font-bold mb-4">Introduction</h2>
-            <p className="text-muted-foreground">
-              At Perspective, we take your privacy seriously. This Privacy Policy explains how we collect, 
-              use, disclose, and safeguard your information when you visit our website and subscribe to our newsletter.
+            <p className="text-muted-foreground">At Naked Farms, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and subscribe to our newsletter.
+
+
             </p>
           </section>
 
@@ -122,18 +122,18 @@ const Privacy = () => {
 
           <section>
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-            <p className="text-muted-foreground">
-              If you have any questions about this Privacy Policy, please contact us at:
+            <p className="text-muted-foreground">If you have any questions about this Privacy Policy, please contact 
+
             </p>
             <p className="text-muted-foreground mt-4">
-              Email: privacy@perspective.blog<br />
+
+              <br />
               Address: San Francisco, CA
             </p>
           </section>
         </div>
       </main>
-    </div>
-  );
+    </div>);
 };
 
 export default Privacy;
