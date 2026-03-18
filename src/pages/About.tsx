@@ -108,7 +108,7 @@ const About = () => {
             <ul className="space-y-3 ml-6">
               <li className="flex items-start">
                 
-                <span>Solve the global food challenge by bringing food production closer to where it's consumed.</span>
+                <span>Build a global decentralized network of small-scale food producers by empowering tens of thousands of local entrepreneurs to grow and sell food profitably within their own communities</span>
               </li>
               <li className="flex items-start">
                 
