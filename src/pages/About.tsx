@@ -37,11 +37,11 @@ A pivotal meeting with Meiny Prins revealed the harsh reality of current food pr
 
 
           
-          <p>
-            We explore topics that matter: wellness practices that actually work, travel experiences that transform 
-            us, creative pursuits that bring joy, and personal growth strategies that lead to lasting change. 
-            Our approach is grounded in curiosity, backed by research, and enriched by lived experience.
-          </p>
+          
+
+
+
+          
         </section>
 
 
