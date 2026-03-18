@@ -118,7 +118,7 @@ const About = () => {
 
               
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
+                
                 
               </li>
             </ul>
