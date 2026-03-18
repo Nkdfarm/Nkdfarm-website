@@ -37,7 +37,7 @@ const HeroSection = () => {
                 line === "" ?
                 <span key={i} className="block h-4" /> :
 
-                <span key={i} className={`block ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""} ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" ? "mb-4" : ""}`}>{line}</span>
+                <span key={i} className={`block ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""} ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Food globe-trotting has no place in this dystopian age" ? "mb-4" : ""}`}>{line}</span>
 
                 )}
               </span>
