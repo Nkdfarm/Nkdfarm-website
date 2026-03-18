@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import toaAtoll from "@/assets/toa-atoll.jpg";
 
 const About = () => {
   return (
@@ -17,6 +18,11 @@ const About = () => {
 
           
         </div>
+
+        {/* Atoll Image Section */}
+        <section className="mb-16 rounded-2xl overflow-hidden">
+          <img src={toaAtoll} alt="Aerial view of Toa atoll in French Polynesia" className="w-full h-auto object-cover rounded-2xl" />
+        </section>
 
         {/* Story Section */}
         <section className="mb-16 space-y-6 text-muted-foreground animate-slide-up stagger-2">
