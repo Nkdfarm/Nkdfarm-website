@@ -394,6 +394,10 @@ export default function FarmBox() {
       <Header />
       <div className="fb-root">
         <div className="fb-page">
+          {/* HERO IMAGE */}
+          <div style={{ marginBottom: 48, borderRadius: 8, overflow: 'hidden', border: '1px solid var(--rule)' }}>
+            <img src={farmboxHero} alt="The Farmbox Solution — A 4,000 sq.m Blueprint for Urban Food Sovereignty" style={{ width: '100%', display: 'block' }} />
+          </div>
 
           {/* HEADER */}
           <div className="fb-header">
