@@ -31,6 +31,8 @@ const About = () => {
 
 
 A pivotal meeting with Meiny Prins revealed the harsh reality of current food production. Bringing sustainable farming back to urban areas solves a cascade of social and environmental challenges.
+
+
 That's when Naked Farms was born.
 
 
