@@ -6,13 +6,13 @@ const boardMembers = [
   {
     name: "Grant Horsfield",
     role: "Founder",
-    bio: "Emma is a certified wellness coach and nutritionist with over 10 years of experience helping people create sustainable self-care practices. She believes in holistic approaches to health that honor both body and mind.",
+    bio: "Serial entrepreneur & UCT GSB MBA. Built global real estate portfolio + \"The Naked Retreat\" luxury hospitality disruptor. TEDx speaker with multimillion exits across China, South Africa, Europe",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
   {
     name: "Oliver Tittman",
     role: "CEO",
-    bio: "Having visited over 60 countries, Marcus specializes in slow travel and cultural immersion. His writing explores how travel can be both transformative and sustainable, emphasizing meaningful connection over tourist checklists.",
+    bio: "MBA entrepreneur pioneering modular construction across 6 countries. XCUBE founder scaling prefab systems that cut deployment 50-80%. TEDx speaker standardizing hotels, housing, infrastructure.",
     image: "/lovable-uploads/bfcee86e-a748-4d16-8ac2-c6a5d67246c1.jpg",
   },
   {
