@@ -5,12 +5,12 @@ const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Mono:wght@300;400&display=swap');
 
   .fb-root {
-    --ink: #0f0f0d;
-    --paper: #f5f2ec;
-    --sage: #5a7a5c;
-    --wheat: #c4a35a;
-    --mist: #d4ddd5;
-    --rule: rgba(15,15,13,0.12);
+    --ink: hsl(var(--foreground));
+    --paper: hsl(var(--background));
+    --sage: hsl(var(--accent));
+    --wheat: hsl(var(--tag-growth));
+    --mist: hsl(var(--muted));
+    --rule: hsl(var(--border));
     background: var(--paper);
     color: var(--ink);
     font-family: 'Cormorant Garamond', Georgia, serif;
