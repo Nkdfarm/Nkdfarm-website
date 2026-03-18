@@ -10,9 +10,9 @@ const About = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            About Perspective
-          </h1>
+          
+
+          
           <p className="text-lg text-muted-foreground leading-relaxed animate-slide-up stagger-1">
             A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world.
           </p>
@@ -109,8 +109,8 @@ const About = () => {
           </Button>
         </section>
       </main>
-    </div>
-  );
+    </div>);
+
 };
 
 export default About;
