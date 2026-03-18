@@ -21,7 +21,7 @@ const About = () => {
 
         {/* Atoll Image Section */}
         <section className="mb-16 rounded-2xl overflow-hidden">
-          <img src={toaAtoll} alt="Aerial view of Toa atoll in French Polynesia" className="w-full h-auto object-cover rounded-2xl" />
+          <img alt="Aerial view of Toa atoll in French Polynesia" className="w-full h-auto object-cover rounded-2xl" src="/lovable-uploads/27fcc19c-c6af-4bea-ad66-0689f4b39b81.jpg" />
         </section>
 
         {/* Story Section */}
