@@ -8,7 +8,7 @@ const heroLines = [
 "Maximize yield, minimize waste",
 "Profitability redefined",
 "",
-"",
+"We have a solution",
 ""];
 
 
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 line === "" ?
                 <span key={i} className="block h-4" /> :
 
-                <span key={i} className={`block ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""} ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Food globe-trotting has no place in this dystopian age" ? "mb-4" : ""}`}>{line}</span>
+                <span key={i} className={`block ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""}`}>{line}</span>
 
                 )}
               </span>
@@ -46,7 +46,7 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6 pt-4 animate-slide-up stagger-2">
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-4 md:px-10 md:py-6 text-base font-medium transition-all hover:scale-105 w-full sm:w-auto">
-              Discover it now
+              We a solution  
             </Button>
           </div>
         </div>
