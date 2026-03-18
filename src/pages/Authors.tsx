@@ -11,8 +11,8 @@ const Authors = () => {
     articles: 24
   },
   {
-    name: "Marcus Chen",
-    role: "Travel Writer",
+    name: "Oliver Tittman",
+    role: "CEO",
     bio: "Having visited over 60 countries, Marcus specializes in slow travel and cultural immersion. His writing explores how travel can be both transformative and sustainable, emphasizing meaningful connection over tourist checklists.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
     articles: 31
