@@ -42,8 +42,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-
-
+              Solve the global food challenge by bringing food production closer to where it's consumed.
             </p>
             <ul className="space-y-3 ml-6">
               <li className="flex items-start">
