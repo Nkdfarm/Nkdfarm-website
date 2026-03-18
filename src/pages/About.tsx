@@ -67,35 +67,35 @@ const About = () => {
         </section>
 
         {/* Values Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Our Values</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Authenticity</h3>
-              <p className="text-muted-foreground">
-                We share real experiences, honest reflections, and genuine insights—not curated perfection.
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Thoughtfulness</h3>
-              <p className="text-muted-foreground">
-                Every article is carefully researched, thoughtfully written, and designed to add real value.
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Inclusivity</h3>
-              <p className="text-muted-foreground">
-                We welcome diverse perspectives and believe everyone's journey deserves respect and representation.
-              </p>
-            </div>
-            <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Sustainability</h3>
-              <p className="text-muted-foreground">
-                We promote practices that are sustainable for individuals, communities, and the planet.
-              </p>
-            </div>
-          </div>
-        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         {/* CTA Section */}
         <section className="text-center py-12 rounded-2xl bg-card">
