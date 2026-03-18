@@ -4,8 +4,8 @@ import { Mail, Instagram, Twitter } from "lucide-react";
 const Authors = () => {
   const authors = [
   {
-    name: "Emma Thompson",
-    role: "Wellness Editor",
+    name: "Grant Horsefield",
+    role: "Founder",
     bio: "Emma is a certified wellness coach and nutritionist with over 10 years of experience helping people create sustainable self-care practices. She believes in holistic approaches to health that honor both body and mind.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
     articles: 24
