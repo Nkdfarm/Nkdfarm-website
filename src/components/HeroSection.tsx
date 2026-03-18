@@ -5,11 +5,17 @@ const heroLines = [
 "",
 "",
 "Return to roots",
+"",
+"",
 "Grow close to cities",
+"",
+"",
 "Maximize yield, minimize waste",
+"",
+"",
 "Profitability redefined",
 "",
-"We have a solution",
+"",
 ""];
 
 
