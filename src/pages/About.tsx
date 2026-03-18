@@ -52,7 +52,7 @@ const About = () => {
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-1">•</span>
-                <span>Explore the world with curiosity and respect</span>
+                
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-1">•</span>
