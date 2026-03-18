@@ -275,7 +275,7 @@ const styles = `
     margin: 48px 0;
     padding: 32px 40px;
     border-left: 2px solid var(--sage);
-    background: rgba(90,122,92,0.04);
+    background: hsl(var(--accent) / 0.06);
   }
   .fb-pullquote p {
     font-size: 24px;
