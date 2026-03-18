@@ -4,7 +4,7 @@ const heroLines = [
 "Food globe-trotting has no place in this dystopian age",
 "",
 "",
-"Return to roots",
+"Return to origins",
 "",
 "",
 "Grow close to cities",
