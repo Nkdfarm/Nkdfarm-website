@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const heroLines = [
-  "Foods can no longer globe-trot through our dystopian world",
+  "Food globe-trotting has no place in this dystopian age",
   "",
   "Return to roots",
   "Grow close to cities",
