@@ -62,7 +62,7 @@ const Authors = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-1">{author.name}</h3>
                   <p className="text-accent font-medium mb-3">{author.role}</p>
-                  <p className="text-sm text-muted-foreground">{author.articles} articles published</p>
+                  
                 </div>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">
