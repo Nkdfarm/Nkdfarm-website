@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 
 const heroLines = [
-  "Food globe-trotting has no place in this dystopian age",
-  "",
-  "Return to roots",
-  "Grow close to cities",
-  "Maximize yield, minimize waste",
-  "Profitability redefined",
-  "",
-  "We have a solution",
-  "",
-];
+"Food globe-trotting has no place in this dystopian age",
+"",
+"Return to roots",
+"Grow close to cities",
+"Maximize yield, minimize waste",
+"Profitability redefined",
+"",
+"We have a solution",
+""];
+
 
 const HeroSection = () => {
   return (
@@ -21,8 +21,8 @@ const HeroSection = () => {
           <img
             alt="Hero"
             className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-            src="/lovable-uploads/f69dd2f0-bf72-4901-a316-05dc81956ab1.png"
-          />
+            src="/lovable-uploads/f69dd2f0-bf72-4901-a316-05dc81956ab1.png" />
+          
         </div>
 
         {/* Right side - Content */}
@@ -34,11 +34,11 @@ const HeroSection = () => {
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl animate-slide-up stagger-1">
               <span>
                 {heroLines.map((line, i) =>
-                  line === "" ? (
-                    <span key={i} className="block h-4" />
-                  ) : (
-                    <span key={i} className={`block ${(line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined") ? "text-[hsl(var(--brand-accent))]" : ""}`}>{line}</span>
-                  )
+                line === "" ?
+                <span key={i} className="block h-4" /> :
+
+                <span key={i} className={`block ${line === "Return to roots" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""}`}>{line}</span>
+
                 )}
               </span>
             </p>
@@ -51,8 +51,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
