@@ -54,10 +54,10 @@ const About = () => {
                 <span className="mr-3 mt-1">•</span>
                 
               </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                
-              </li>
+              
+
+
+              
               <li className="flex items-start">
                 <span className="mr-3 mt-1">•</span>
                 <span>Embrace personal growth as a lifelong journey</span>
