@@ -114,22 +114,6 @@ const About = () => {
         </section>
 
         {/* Mission Copy Section */}
-        <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
-          <h2 className="text-3xl font-bold mb-6">Vision</h2>
-          <div className="space-y-4 text-muted-foreground">
-            <p></p>
-            <ul className="space-y-3 ml-6">
-              <li className="flex items-start">
-                <span>
-                  Build a global decentralized network of small-scale food producers by empowering tens of thousands of
-                  local entrepreneurs to grow and sell food profitably within their own communities
-                </span>
-              </li>
-              <li className="flex items-start"></li>
-              <li className="flex items-start"></li>
-            </ul>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="text-center py-12 rounded-2xl bg-card">
