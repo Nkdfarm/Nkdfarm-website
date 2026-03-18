@@ -47,7 +47,7 @@ const About = () => {
             </p>
             <ul className="space-y-3 ml-6">
               <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
+                
                 <span>Solve the global food challenge by bringing food production closer to where it’s consumed.</span>
               </li>
               <li className="flex items-start">
