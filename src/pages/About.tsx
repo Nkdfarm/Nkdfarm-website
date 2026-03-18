@@ -31,11 +31,11 @@ const About = () => {
             Perspective began with a simple question: What if we could create a space where thoughtful ideas, 
             meaningful stories, and practical wisdom come together to enrich our daily lives?
           </p>
-          <p>
-            In a world saturated with information, we felt the need for something different—a publication that 
-            prioritizes depth over speed, quality over quantity, and authentic connection over viral content. 
-            Perspective is our answer to that need.
-          </p>
+          
+
+
+
+          
           <p>
             We explore topics that matter: wellness practices that actually work, travel experiences that transform 
             us, creative pursuits that bring joy, and personal growth strategies that lead to lasting change. 
