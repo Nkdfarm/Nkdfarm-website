@@ -40,12 +40,12 @@ const Authors = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            Meet Our Authors
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">Board
+
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">
-            The voices behind Perspective—experienced writers, practitioners, and thoughtful explorers 
-            who bring diverse perspectives and genuine insights to every article.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">People that want change
+
+
           </p>
         </div>
 
