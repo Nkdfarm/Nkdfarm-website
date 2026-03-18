@@ -13,9 +13,9 @@ const About = () => {
           
 
           
-          <p className="text-lg text-muted-foreground leading-relaxed animate-slide-up stagger-1">
-            A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world.
-          </p>
+          
+
+          
         </div>
 
         {/* Story Section */}
