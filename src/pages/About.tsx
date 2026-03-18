@@ -27,8 +27,7 @@ const About = () => {
         {/* Story Section */}
         <section className="mb-16 space-y-6 text-muted-foreground animate-slide-up stagger-2">
           <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
-          <p>Toau: A Wake-Up Call
-Toau—an almost wild atoll in the middle of the Pacific—showed us our complete dependence on complex global food logistics for fresh produce. Strangely, that uneasy feeling of vulnerability followed us back to the big city, triggered by origin tags in everyday supermarkets.
+          <p>Toau, an almost wild atoll in the middle of the Pacific showed us our complete dependence on complex global food logistics for fresh produce. Strangely, that uneasy feeling of vulnerability followed us back to the big city, triggered by origin tags in everyday supermarkets.
 
 
 Eyes Opened
