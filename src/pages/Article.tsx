@@ -1,9 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import Header from "@/components/Header";
-import ArticleCard from "@/components/ArticleCard";
 import FarmBoxFinanceContent from "@/components/FarmBoxFinanceContent";
 import PhilippiContent from "@/components/PhilippiContent";
-import { getArticleById, getRelatedArticles } from "@/data/articles";
+import { getArticleById } from "@/data/articles";
 import { Facebook, Twitter, Linkedin, Link2, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -16,7 +15,7 @@ const Article = () => {
     return <Navigate to="/404" replace />;
   }
 
-  const relatedArticles = getRelatedArticles(article.id);
+  
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -231,19 +230,6 @@ const Article = () => {
           </div>
         </article>
 
-        {/* Related Articles */}
-        <section className="bg-muted py-16 animate-fade-in">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 animate-slide-up">You might also like</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedArticles.map((relatedArticle, index) => (
-                <div key={relatedArticle.id} className={`animate-slide-up stagger-${Math.min(index + 1, 3)}`}>
-                  <ArticleCard {...relatedArticle} size="small" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );
