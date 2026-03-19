@@ -40,7 +40,7 @@ const advantages = [
     icon: <Wind className="w-4 h-4" />,
     label: "Stress Testing",
     title: "Extreme conditions for greenhouse structure testing",
-    desc: "The Cape Flats present two of the most demanding physical challenges an agricultural structure can face: soft, sandy, unstable soil with poor load-bearing characteristics, and some of urban South Africa's strongest seasonal wind loads — the famous "Cape Doctor" south-easterly. A FarmBox structure that performs reliably here is over-engineered by design for any global deployment.",
+    desc: "The Cape Flats present two of the most demanding physical challenges an agricultural structure can face: soft, sandy, unstable soil with poor load-bearing characteristics, and some of urban South Africa's strongest seasonal wind loads \u2014 the famous 'Cape Doctor' south-easterly. A FarmBox structure that performs reliably here is over-engineered by design for any global deployment.",
   },
   {
     num: 6,
