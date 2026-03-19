@@ -159,18 +159,6 @@ const PhilippiContent = () => {
       
 
       {/* CLOSING CTA */}
-      <div className="bg-muted border border-accent/30 rounded-2xl p-10 md:p-14 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">The global FarmBox network starts here.</h2>
-        <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto mb-6">
-          Philippi is not a compromise — it is a strategic choice. If you are an investor, a farming partner, or an engineering collaborator interested in the Naked Farms Serie A programme, we welcome your engagement.
-        </p>
-        <a
-          href="/contact"
-          className="inline-block bg-accent text-accent-foreground font-bold text-sm px-7 py-3.5 rounded-lg hover:bg-accent/90 transition-all">
-          
-          Connect with Naked Farms
-        </a>
-      </div>
     </div>);
 
 };
