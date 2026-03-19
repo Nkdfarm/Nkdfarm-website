@@ -84,19 +84,6 @@ const PhilippiContent = () => {
         Below are the six structural advantages of the Philippi site — identified in the Naked Farms investor brief as the strategic rationale for establishing both the FarmLab and FarmBox1 production unit here.
       </p>
 
-      {/* STATS */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
-        {[
-        { value: "6", label: "structural site advantages identified" },
-        { value: "1,000", label: "local households fed by FarmBox1" },
-        { value: "4,000", label: "sq m FarmBox production unit" }].
-        map((s, i) => (
-          <div key={i} className="bg-card p-6 text-center">
-            <p className="text-3xl font-bold text-primary">{s.value}</p>
-            <p className="text-sm text-muted-foreground mt-1">{s.label}</p>
-          </div>
-        ))}
-      </div>
 
       {/* THE SIX ADVANTAGES */}
       <div>
