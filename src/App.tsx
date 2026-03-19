@@ -10,7 +10,7 @@ import Travel from "./pages/Travel";
 import Creativity from "./pages/Creativity";
 import Growth from "./pages/Growth";
 import About from "./pages/About";
-import Authors from "./pages/Authors";
+
 import Contact from "./pages/Contact";
 import StyleGuide from "./pages/StyleGuide";
 import Privacy from "./pages/Privacy";
