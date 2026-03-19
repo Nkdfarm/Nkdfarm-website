@@ -33,7 +33,7 @@ export const articles: Article[] = [
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80",
     author: {
       name: "Robbie Taylor CFO",
-      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
       bio: "Chief Financial Officer at Naked Farms",
     },
     content: {
