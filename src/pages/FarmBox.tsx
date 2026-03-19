@@ -424,7 +424,7 @@ export default function FarmBox() {
             <div className="fb-metrics">
               {[
                 { value: "95", sup: "%", desc: "Less water vs.\nfield agriculture" },
-                { value: "500", sup: "", desc: "Families served\nper unit" },
+                { value: "1000", sup: "", desc: "Families served\nper unit" },
                 { value: "84", sup: "¢", desc: "Food dollar\nretained locally" },
               ].map((m, i) => (
                 <div className="fb-metric" key={i}>
