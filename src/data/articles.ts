@@ -25,40 +25,56 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "001",
-    title: "Whispers of Wisdom",
-    subtitle: "Finding clarity in the quiet moments of financial planning",
+    title: "How to Finance My FarmBox",
+    subtitle: "The 7-Year Path to Farm Ownership — 80/20 Capital Partnership Model",
     category: "Financing",
-    date: "Oct 16, 2024",
-    readTime: "5 min",
+    date: "Mar 19, 2026",
+    readTime: "12 min",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80",
     author: {
-      name: "David Kim",
+      name: "Robbie Taylor CFO",
       avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
-      bio: "Financial wellness writer and personal growth advocate",
+      bio: "Chief Financial Officer at Naked Farms",
     },
     content: {
-      introduction: "In a world of financial noise and conflicting advice, sometimes the wisest course of action is to listen to the whispers—those quiet moments of clarity that cut through the chaos. Financial planning isn't just about numbers; it's about understanding your values and aligning your resources with what truly matters.",
+      introduction: "Owning a smart greenhouse has historically required significant upfront capital — putting it out of reach for most aspiring farmers. The Naked Farms financing model changes that dynamic through a structured 80/20 capital partnership. Vetted farmers contribute just 20% of the FarmBox build cost from personal funds, while a funder provides the remaining 80%. Over a structured 7-year pay-to-own period, the funder is fully repaid from farm revenues — and at Year 7, the FarmBox unit transfers to the farmer's legal ownership. A single FarmBox unit — 4,000 sq m of precision-controlled growing space — can feed up to 500 local households. This guide walks you through exactly how the financing blueprint works: who pays what, when ownership transfers, and what your financial picture looks like after Year 7.",
       sections: [
         {
-          heading: "The Power of Quiet Reflection",
-          content: "Before making any major financial decision, we often rush to consume more information, read more articles, or seek more advice. Yet the most profound insights often come when we step back and simply reflect. Taking time for quiet contemplation allows us to connect with our deeper values and understand what financial security truly means to us—not what society tells us it should mean.",
+          heading: "Understanding the Key Entities",
+          content: "Before diving into the financing model, it is important to understand who the key parties are. The FarmBox is the physical smart greenhouse unit — a 4,000 sq m precision-engineered growing facility designed, adapted, and installed by Naked Farms. Naked Farms is the managing entity responsible for design, engineering, installation, AI platform, operational management, and licensing. The Funder is the capital provider who finances 80% of the build cost ($240,000 of the $300,000 total), recovering capital plus interest from farm revenue over 7 years. The Farmer is the vetted operator who contributes 20% ($60,000) from personal funds, runs daily operations, earns a living wage, and receives full legal ownership at the 7-year mark.",
         },
         {
-          heading: "Building Financial Awareness",
-          content: "True financial wisdom begins with awareness. This means honestly assessing where you are, understanding your patterns and behaviors around money, and recognizing the emotional drivers behind your financial decisions. It's not about judgment, but about clear-eyed observation. When we can see our financial reality clearly, we're empowered to make intentional changes.",
+          heading: "The 80/20 Capital Formula",
+          content: "The FarmBox financing model is built on a clear capital split: the Funder provides 80% ($240,000) as external capital, while the Farmer contributes 20% ($60,000) from personal funds, totaling $300,000 in combined capital. The farmer's contribution represents their equity skin-in-the-game — it demonstrates commitment, reduces funder risk, and means the farmer enters as a co-investor, not simply a tenant or employee. The funder's share is structured as a capital loan recovered from farm revenues over 7 years, including agreed interest. Naked Farms manages the full build, engineering, and deployment from day one.",
         },
         {
-          heading: "Small Steps, Lasting Change",
-          content: "The whispers of wisdom often guide us toward small, sustainable actions rather than dramatic overhauls. Perhaps it's automating a small savings contribution, or finally organizing your financial documents, or having that honest conversation about money with your partner. These quiet actions, consistently applied, create profound change over time.",
+          heading: "The Two Phases of FarmBox Ownership",
+          content: "During Years 1–7 (the pay-to-own phase), the funder is repaid $240K plus interest from farm revenue, the farmer earns a living wage from Day 1, Naked Farms manages engineering, AI, and seeds, and the farmer retains their 20% equity stake throughout. From Year 8 onwards (the ownership transition), the funder exits and the legal deed transfers to the farmer, who then captures the funder's former revenue share, resulting in significantly increased net income. Naked Farms licensing and AI support continue at farmer-owner rates.",
         },
         {
-          heading: "Values-Based Financial Planning",
-          content: "When we align our financial decisions with our core values, money becomes a tool for creating the life we want rather than a source of stress and confusion. Ask yourself: What do I truly value? How can my financial choices support those values? The answers to these questions are your compass in navigating financial decisions.",
+          heading: "Naked Farms Engineering Services",
+          content: "Every FarmBox is engineered to the specific conditions of your site — this is not a one-size-fits-all greenhouse kit. Services include site assessment and feasibility surveys, structural design and local adaptation, climate system engineering, water and irrigation engineering with closed-loop management, energy system design, AI platform integration, and full commissioning and handover. Every FarmBox farmer also has direct access to a dedicated Naked Farms agronomy consultant around the clock, 7 days a week, for the full lifetime of the FarmBox.",
+        },
+        {
+          heading: "What Does the Farmer Earn?",
+          content: "During Years 1–7, you earn a living wage drawn from farm revenues from Day 1, coverage of all daily operating costs, practical ownership experience, and the security of a 20% personal equity stake. From Year 8 onwards, you gain full profit capture by absorbing the funder's former 80% revenue share, significantly increased net income, legal ownership of the FarmBox unit with the title in your name, and continued access to the Naked Farms AI management and 24/7 agronomy at farmer-owner rates.",
+        },
+        {
+          heading: "The Naked Farms AI Platform",
+          content: "The AI and digital management layer is the operational engine that makes the entire financing model viable. It optimises growing conditions 24/7 via sensors, satellite data, and machine learning; reduces crop loss and resource waste; provides real-time financial dashboards; supports consistent output (a single unit can feed 500 local households); includes 24/7 agronomy consultancy; and licensing fees continue after ownership transfer, giving ongoing access to platform upgrades and agronomic data insights.",
+        },
+        {
+          heading: "How to Qualify as a Vetted Farmer",
+          content: "The FarmBox model is designed for serious, committed farmers. You must demonstrate: availability of $60,000 in personal funds (the 20% equity contribution), agricultural experience or relevant farm management skills, commitment to full-time operation, suitable land or site access (assessed during the engineering feasibility phase), alignment with the FarmBox community food supply mission, and willingness to engage with the Naked Farms AI management platform and 24/7 agronomy support.",
+        },
+        {
+          heading: "Key Financial Advantages Summary",
+          content: "The model offers an 80/20 capital split (access a $300K FarmBox with only $60K), limited risk exposure to your 20% equity stake, a living wage from Day 1 while building toward ownership, site-adapted professionally engineered FarmBox included, AI-optimised operations for consistent yields, 24/7 agronomy consultancy, legal asset transfer at Year 7, and full profit capture from Year 8 with significantly higher net income.",
         },
       ],
-      conclusion: "Financial wisdom isn't found in the loudest voices or the most complex strategies. It's discovered in quiet moments of reflection, in the gentle guidance of your values, and in the consistent application of simple, intentional actions. Listen to the whispers—they often speak the deepest truths.",
+      conclusion: "The 80/20 pay-to-own model means you enter as a co-investor on day one. By Year 7, you hold the deed to a $300,000 smart greenhouse — engineered, supported, and managed by Naked Farms every step of the way. Contact Naked Farms to begin the farmer vetting and application process, confirm your $60,000 personal equity contribution, commission a site feasibility assessment, and start feeding your community — and building your future.",
     },
-    tags: ["financial planning", "mindfulness", "personal finance", "values"],
+    tags: ["farmbox", "financing", "80/20 model", "smart greenhouse", "farm ownership", "agriculture"],
   },
   {
     id: "002",
