@@ -581,7 +581,7 @@ export default function FarmBox() {
           {/* FOOTER */}
           <div className="fb-footer">
             <div className="fb-footer-left">The Farmbox Solution · Urban Food Sovereignty Blueprint</div>
-            <div className="fb-footer-right">4,000 sq.m · 500 families · 10-mile radius</div>
+            <div className="fb-footer-right">4,000 sq.m · 1000 families · 10-mile radius</div>
           </div>
 
         </div>
