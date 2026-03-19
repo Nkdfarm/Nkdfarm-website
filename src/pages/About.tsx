@@ -123,7 +123,14 @@ const About = () => {
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1 flex items-center gap-2">{member.name} <img src={`https://flagcdn.com/20x15/${member.flagCode}.png`} alt="" className="inline-block" width={20} height={15} /></h3>
+                    <h3 className="text-xl font-bold mb-1 flex items-center gap-2">
+                      {member.name}
+                      <span className="flex items-center gap-0.5">
+                        {(Array.isArray(member.flagCode) ? member.flagCode : [member.flagCode]).map((code) => (
+                          <img key={code} src={`https://flagcdn.com/20x15/${code}.png`} alt="" className="inline-block" width={20} height={15} />
+                        ))}
+                      </span>
+                    </h3>
                     <p className="text-accent font-medium text-sm">{member.role}</p>
                   </div>
                 </div>
