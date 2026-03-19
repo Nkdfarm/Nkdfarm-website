@@ -15,7 +15,7 @@ const Article = () => {
     return <Navigate to="/404" replace />;
   }
 
-  const relatedArticles = getRelatedArticles(article.id);
+  
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(window.location.href);
