@@ -80,7 +80,7 @@ const FarmSim = () => {
       </section>
 
       {/* WHAT IS FARMSIM */}
-      <section className="border-t border-border py-20 lg:py-28">
+      <section className="border-t border-border pt-10 pb-20 lg:pt-14 lg:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
           <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700">
             <h2 className="text-3xl lg:text-4xl font-bold leading-[1.1]">
