@@ -534,8 +534,8 @@ export default function FarmBox() {
             <div className="fb-pillars">
               {[{
                 id: "A",
-                head: "Zero-Capital Entry",
-                body: "No $300,000 start-up capital required. Entrepreneurs operate under a Pay-to-Own contract structure from day one."
+                head: "80/20 capital split",
+                body: "Access a $300K FarmBox with only $60K personal contribution.\nEntrepreneurs operate under a Pay-to-Own contract structure from day one."
               },
               {
                 id: "B",
