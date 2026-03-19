@@ -123,7 +123,7 @@ const About = () => {
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1">{member.name} <span className="text-base">{member.flag}</span></h3>
+                    <h3 className="text-xl font-bold mb-1 flex items-center gap-2">{member.name} <img src={`https://flagcdn.com/20x15/${member.flagCode}.png`} alt="" className="inline-block" width={20} height={15} /></h3>
                     <p className="text-accent font-medium text-sm">{member.role}</p>
                   </div>
                 </div>
