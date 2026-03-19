@@ -5,7 +5,7 @@ import IntroSection from "@/components/IntroSection";
 import { articles } from "@/data/articles";
 
 const Index = () => {
-  const featuredArticles = articles.slice(0, 6);
+  const featuredArticles = articles.slice(0, 2);
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
