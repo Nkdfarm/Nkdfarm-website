@@ -140,6 +140,11 @@ const PhilippiContent = () => {
               </div>
             )}
           </div>
+          <img
+            src={climateZonesMap}
+            alt="World climate zones map"
+            className="w-full rounded-xl mt-6"
+          />
         </div>
       </div>
     </div>);
