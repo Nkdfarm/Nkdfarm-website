@@ -10,7 +10,7 @@ import Travel from "./pages/Travel";
 import Creativity from "./pages/Creativity";
 import Growth from "./pages/Growth";
 import About from "./pages/About";
-import Authors from "./pages/Authors";
+
 import Contact from "./pages/Contact";
 import StyleGuide from "./pages/StyleGuide";
 import Privacy from "./pages/Privacy";
@@ -37,7 +37,7 @@ const App = () => (
           <Route path="/creativity" element={<Creativity />} />
           <Route path="/growth" element={<Growth />} />
           <Route path="/about" element={<About />} />
-          <Route path="/authors" element={<Authors />} />
+          
           <Route path="/contact" element={<Contact />} />
           <Route path="/style-guide" element={<StyleGuide />} />
           <Route path="/privacy" element={<Privacy />} />
