@@ -139,7 +139,8 @@ const Article = () => {
           <div className="prose prose-lg max-w-none mb-16 animate-slide-up stagger-2">
             {article.id === "001" ? (
               <FarmBoxFinanceContent />
-            ) : (
+            ) : article.id === "002" ? (
+              <PhilippiContent />
               <>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
                   {article.content.introduction}
