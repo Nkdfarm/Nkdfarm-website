@@ -58,11 +58,13 @@ const FarmSim = () => {
               <p className="text-xs text-muted-foreground leading-[1.7] mb-5">
                 The interactive configurator is currently in development by the Naked Farms team. It will allow you to model your specific FarmBox project end-to-end — from initial capital outlay to 10-year net returns.
               </p>
-              <img
-                src={farmsimDashboard}
-                alt="FarmSim financial simulator dashboard showing crop projections and KPIs"
-                className="w-full rounded-lg mb-5"
-              />
+              <div className="bg-black rounded-lg mb-5 p-4">
+                <img
+                  src={farmsimDashboard}
+                  alt="FarmSim financial simulator dashboard showing crop projections and KPIs"
+                  className="w-full rounded"
+                />
+              </div>
               <div className="flex flex-wrap gap-2">
                 <span className="font-mono text-[11px] font-medium px-3 py-1 rounded-full border border-blue-400/30 bg-blue-400/10 text-blue-400">CapEx Modelling</span>
                 <span className="font-mono text-[11px] font-medium px-3 py-1 rounded-full border border-accent/30 bg-accent/10 text-accent">OpEx Simulation</span>
