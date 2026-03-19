@@ -77,7 +77,7 @@ const About = () => {
         </section>
 
         {/* Our Board Section */}
-        <section className="mb-16">
+        <section id="board" className="mb-16">
           <h2 className="text-3xl font-bold text-foreground mb-2">Our Board</h2>
           <p className="text-muted-foreground mb-8">An eclectic team viewing challenges through a global lens</p>
           <div className="grid sm:grid-cols-2 gap-6">
