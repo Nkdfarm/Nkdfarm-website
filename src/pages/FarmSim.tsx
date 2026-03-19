@@ -67,7 +67,7 @@ const FarmSim = () => {
           </div>
 
           {/* Right: Dashboard Image */}
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="hidden md:flex items-center justify-center">
             <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-500 relative w-full max-w-[520px]">
               <img
                 src={farmsimDashboard}
