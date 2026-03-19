@@ -36,10 +36,6 @@ const FarmSim = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 py-24 lg:py-32 relative z-10">
           {/* Left */}
           <div className="flex flex-col justify-center">
-            <p className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 font-mono text-xs tracking-[0.2em] uppercase text-accent mb-7 flex items-center gap-3">
-              <span className="w-8 h-px bg-accent inline-block" />
-              FarmBox Financial Configurator
-            </p>
             <h1 className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-100 text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] mb-3">
               Model your<br /><span className="text-accent italic">farm's future</span><br />with precision.
             </h1>
