@@ -534,16 +534,11 @@ export default function FarmBox() {
             <div className="fb-pillars">
               {[{
                 id: "A",
-                head: "80/20 capital split",
-                body: "Access a $300K FarmBox with only $60K personal contribution.\nEntrepreneurs operate under a Pay-to-Own contract structure from day one."
-              },
-              {
-                id: "B",
                 head: "7-Year Full Ownership",
                 body: "A clearly defined pathway to full ownership over seven years, with progressive equity accumulation built into the franchise agreement."
               },
               {
-                id: "C",
+                id: "B",
                 head: "AI-Proof Careers",
                 body: "Stable, local roles resistant to white-collar automation — rooted in physical production, logistics, and community relationships."
               }].
