@@ -83,7 +83,7 @@ export const articles: Article[] = [
     category: "Lifestyle",
     date: "Oct 23, 2024",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1920&q=80",
+    image: "/lovable-uploads/myarchitectai_fnrldtxiu_sd.png",
     author: {
       name: "Sofia Rodriguez",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
