@@ -90,12 +90,12 @@ const PhilippiContent = () => {
         { value: "6", label: "structural site advantages identified" },
         { value: "1,000", label: "local households fed by FarmBox1" },
         { value: "4,000", label: "sq m FarmBox production unit" }].
-        map((s, i) => (
-          <div key={i} className="bg-card p-6 text-center">
-            <p className="text-3xl font-bold text-primary">{s.value}</p>
-            <p className="text-sm text-muted-foreground mt-1">{s.label}</p>
-          </div>
-        ))}
+        map((s, i) => {}
+
+
+
+
+        )}
       </div>
 
       {/* THE SIX ADVANTAGES */}
