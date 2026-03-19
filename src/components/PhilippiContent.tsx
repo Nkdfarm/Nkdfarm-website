@@ -66,11 +66,15 @@ const PhilippiContent = () => {
 
       </p>
 
-      {/* PULL QUOTE */}
-      
-
-
-
+      {/* VIDEO */}
+      <div className="rounded-2xl overflow-hidden border border-border">
+        <video
+          src="/lovable-uploads/philippi-video.mp4"
+          controls
+          className="w-full"
+          preload="metadata"
+        />
+      </div>
 
 
 
