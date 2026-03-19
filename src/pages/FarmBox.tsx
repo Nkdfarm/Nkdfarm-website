@@ -417,8 +417,8 @@ export default function FarmBox() {
           <div className="fb-section" ref={addRef(0)}>
             <p className="fb-intro">
               A precision-agriculture franchise combining{" "}
-              <strong>AI-driven production, zero-capital</strong>{" "}
-              entrepreneurship, and hyper-local distribution — placing fresh food
+              <strong>AI-driven production, an 80/20 capital partnership</strong>{" "}
+              and hyper-local distribution — placing fresh food
               sovereignty within reach of any urban community.
             </p>
             <div className="fb-metrics">
