@@ -80,7 +80,7 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-accent transition-colors">Terms of Service</a></li>
+                
               </ul>
             </div>
           </div>
