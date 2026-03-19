@@ -171,8 +171,31 @@ const FarmSim = () => {
         </div>
       </section>
 
-      {/* NOTIFY */}
+      {/* Link to Finance Article */}
       <section className="py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl bg-card p-8 md:p-12">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-4">Understand the Financial Model</h2>
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                Before you configure your FarmBox project, dive into the full financing breakdown — the 80/20 capital formula, the 7-year ownership timeline, and how the numbers work for you from day one.
+              </p>
+              <div className="max-w-sm mx-auto">
+                <ArticleCard
+                  id="001"
+                  title="How to Finance My FarmBox"
+                  category="Financing"
+                  date="Mar 19, 2026"
+                  image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NOTIFY */}
+      <section className="pb-16 lg:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 relative bg-card border border-accent/20 rounded-2xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-10 overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
@@ -192,29 +215,6 @@ const FarmSim = () => {
                 Notify me
               </button>
             </form>
-          </div>
-        </div>
-      </section>
-
-      {/* Link to Finance Article */}
-      <section className="pb-16 lg:pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-card p-8 md:p-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Understand the Financial Model</h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Before you configure your FarmBox project, dive into the full financing breakdown — the 80/20 capital formula, the 7-year ownership timeline, and how the numbers work for you from day one.
-              </p>
-              <div className="max-w-sm mx-auto">
-                <ArticleCard
-                  id="001"
-                  title="How to Finance My FarmBox"
-                  category="Financing"
-                  date="Mar 19, 2026"
-                  image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </section>
