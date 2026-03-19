@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { ArrowRight, Lock } from "lucide-react";
+import { Lock } from "lucide-react";
 import { Link } from "react-router-dom";
+import ArticleCard from "@/components/ArticleCard";
 
 const FarmSim = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
