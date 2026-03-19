@@ -21,7 +21,7 @@ const styles = `
   .fb-page {
     max-width: 820px;
     margin: 0 auto;
-    padding: 80px 60px 40px;
+    padding: 80px 60px 120px;
   }
 
   .fb-header {
@@ -506,24 +506,24 @@ export default function FarmBox() {
                   <div className="fb-bar-group">
                     <div className="fb-bar-top-label">Farmbox</div>
                     <div className="fb-bars">
-                      <div className="fb-bar-new">100.0¢</div>
+                      <div className="fb-bar-new">84.1¢</div>
                     </div>
                     <div className="fb-bar-seg-label">Producer keeps all</div>
                   </div>
                 </div>
-                
-
-                
+                <div className="fb-chart-note">
+                  Direct-to-consumer captures nearly 85% of value typically lost to middlemen
+                </div>
               </div>
             </div>
           </div>
 
           {/* PULLQUOTE */}
-          
-
-
-
-          
+          <div className="fb-pullquote">
+            <p>"80/20 capital split
+ Access a $300K FarmBox with only $60K personal contribution"</p>
+            <cite>Core empowerment principle · Bottom of the Pyramid Franchise Model</cite>
+          </div>
 
           {/* EMPOWERMENT */}
           <div className="fb-section" ref={addRef(3)}>
@@ -534,11 +534,16 @@ export default function FarmBox() {
             <div className="fb-pillars">
               {[{
                 id: "A",
+                head: "80/20 capital split",
+                body: "Access a $300K FarmBox with only $60K personal contribution.\nEntrepreneurs operate under a Pay-to-Own contract structure from day one."
+              },
+              {
+                id: "B",
                 head: "7-Year Full Ownership",
                 body: "A clearly defined pathway to full ownership over seven years, with progressive equity accumulation built into the franchise agreement."
               },
               {
-                id: "B",
+                id: "C",
                 head: "AI-Proof Careers",
                 body: "Stable, local roles resistant to white-collar automation — rooted in physical production, logistics, and community relationships."
               }].
@@ -574,6 +579,10 @@ export default function FarmBox() {
           </div>
 
           {/* FOOTER */}
+          <div className="fb-footer">
+            <div className="fb-footer-left">The Farmbox Solution · Urban Food Sovereignty Blueprint</div>
+            <div className="fb-footer-right">4,000 sq.m · 1000 families · 10-mile radius</div>
+          </div>
 
         </div>
       </div>
