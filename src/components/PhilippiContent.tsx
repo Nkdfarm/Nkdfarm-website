@@ -84,7 +84,7 @@ const PhilippiContent = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border rounded-2xl overflow-hidden">
         {[
         { value: "6", label: "structural site advantages identified" },
-        { value: "500", label: "local households fed by FarmBox1" },
+        { value: "1,000", label: "local households fed by FarmBox1" },
         { value: "4,000", label: "sq m FarmBox production unit" }].
         map((s) =>
         <div key={s.value} className="bg-card p-8 text-center">
