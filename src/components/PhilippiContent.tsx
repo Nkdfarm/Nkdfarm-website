@@ -154,15 +154,6 @@ const PhilippiContent = () => {
           </div>
         </div>
       </div>
-
-      {/* INVESTOR NOTE */}
-      
-
-
-
-      
-
-      {/* CLOSING CTA */}
     </div>);
 
 };
