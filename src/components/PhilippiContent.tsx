@@ -152,11 +152,11 @@ const PhilippiContent = () => {
       </div>
 
       {/* INVESTOR NOTE */}
-      <div className="bg-muted border border-yellow-600/30 dark:border-yellow-700 border-l-4 border-l-yellow-600 rounded-r-xl p-7">
-        <p className="text-[15px] leading-relaxed text-foreground">
-          <strong className="text-yellow-700 dark:text-yellow-400">For Serie A investors:</strong> The six Philippi advantages are not incidental benefits — they are deliberate site-selection criteria that reduce the cost of the R&amp;D programme, accelerate the timeline to validated data, and maximise the global applicability of every test result produced at the site. The Philippi R&amp;D programme generates investor-grade evidence at a fraction of the cost achievable in any comparable European or North American location.
-        </p>
-      </div>
+      
+
+
+
+      
 
       {/* CLOSING CTA */}
       <div className="bg-muted border border-accent/30 rounded-2xl p-10 md:p-14 text-center">
