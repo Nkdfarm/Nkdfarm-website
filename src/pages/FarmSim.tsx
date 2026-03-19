@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { ArrowRight, Lock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import farmsimDashboard from "@/assets/farmsim-dashboard.jpg";
 import { Link } from "react-router-dom";
 import ArticleCard from "@/components/ArticleCard";
 
@@ -65,64 +66,14 @@ const FarmSim = () => {
             </div>
           </div>
 
-          {/* Right: Mockup Card */}
+          {/* Right: Dashboard Image */}
           <div className="hidden lg:flex items-center justify-center">
-            <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-500 relative w-full max-w-[480px]">
-              <span className="absolute -top-4 -right-4 font-mono text-[11px] font-medium px-3 py-1.5 rounded-full border border-blue-400/30 bg-blue-400/15 text-blue-400 animate-bounce z-10">CapEx: $300,000</span>
-              <span className="absolute bottom-10 -left-6 font-mono text-[11px] font-medium px-3 py-1.5 rounded-full border border-accent/25 bg-accent/10 text-accent animate-bounce z-10" style={{ animationDelay: "1s" }}>ROI Year 8+</span>
-
-              <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-2xl">
-                {/* Top bar */}
-                <div className="bg-muted px-5 py-3.5 flex items-center gap-2 border-b border-border">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
-                  <span className="ml-auto font-mono text-[11px] text-muted-foreground tracking-wider">farmsim / configurator</span>
-                </div>
-
-                <div className="p-7">
-                  <p className="font-mono text-[10px] text-muted-foreground tracking-[0.15em] uppercase mb-3.5">Unit Configuration</p>
-                  
-                  {[
-                    { label: "FarmBox size", value: "4,000 m²", color: "text-accent" },
-                    { label: "Capital model", value: "80 / 20", color: "text-foreground" },
-                    { label: "Your contribution", value: "$60,000", color: "text-yellow-600 dark:text-yellow-500" },
-                    { label: "Funder capital", value: "$240,000", color: "text-blue-400" },
-                  ].map((row) => (
-                    <div key={row.label} className="flex justify-between items-center mb-3">
-                      <span className="text-xs font-semibold text-muted-foreground">{row.label}</span>
-                      <span className={`font-mono text-sm ${row.color}`}>{row.value}</span>
-                    </div>
-                  ))}
-
-                  {/* Bar */}
-                  <div className="h-1 rounded bg-muted mb-5 overflow-hidden">
-                    <div className="h-full rounded bg-gradient-to-r from-accent to-yellow-600 w-[68%]" />
-                  </div>
-
-                  <p className="font-mono text-[10px] text-muted-foreground tracking-[0.15em] uppercase mb-3.5">Projected KPIs</p>
-                  <div className="grid grid-cols-3 gap-2.5 mb-5">
-                    {[
-                      { label: "CapEx", val: "300K", sub: "Total build", color: "text-blue-400" },
-                      { label: "Yr 7 OpEx", val: "—", sub: "Annual ops", color: "text-accent" },
-                      { label: "Net ROI", val: "—", sub: "Post Y8", color: "text-yellow-600 dark:text-yellow-500" },
-                    ].map((kpi) => (
-                      <div key={kpi.label} className="bg-muted/50 border border-border rounded-lg p-3">
-                        <p className="font-mono text-[9px] text-muted-foreground tracking-[0.12em] uppercase mb-1.5">{kpi.label}</p>
-                        <p className={`font-serif text-xl leading-none ${kpi.color}`}>{kpi.val}</p>
-                        <p className="text-[9px] text-muted-foreground font-semibold mt-1">{kpi.sub}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="h-px bg-border mb-5" />
-
-                  <div className="flex items-center justify-center gap-2 bg-accent/5 border border-dashed border-accent/30 rounded-lg py-3.5">
-                    <Lock className="w-4 h-4 text-accent opacity-70" />
-                    <span className="font-mono text-[11px] text-accent tracking-wider opacity-80">Full simulation — Coming Soon</span>
-                  </div>
-                </div>
-              </div>
+            <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-500 relative w-full max-w-[520px]">
+              <img
+                src={farmsimDashboard}
+                alt="FarmSim futuristic dashboard showing crop projections and financial KPIs"
+                className="w-full rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
