@@ -104,17 +104,17 @@ const Header = () => {
               <a href="/#articles" className="text-sm font-medium hover:text-accent transition-colors">
                 Articles
               </a>
-              <a href="/wellness" className="text-sm font-medium hover:text-accent transition-colors">
-                Wellness
+              <a href="/farmbox" className="text-sm font-medium hover:text-accent transition-colors">
+                FarmBox
               </a>
-              <a href="/travel" className="text-sm font-medium hover:text-accent transition-colors">
-                Travel
+              <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
+                FarmSim
               </a>
               <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
                 About
               </a>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full">
-                Join Now
+                Contact
               </Button>
             </nav>
           </div>
