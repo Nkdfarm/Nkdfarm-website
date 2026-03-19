@@ -17,7 +17,7 @@ const boardMembers = [
     role: "Chief Executive Officer",
     bio: "MBA entrepreneur pioneering modular construction across 6 countries. XCUBE founder scaling prefab systems that cut deployment 50-80%. TEDx speaker standardizing hotels, housing, infrastructure.",
     image: "/lovable-uploads/bfcee86e-a748-4d16-8ac2-c6a5d67246c1.jpg",
-    flagCode: "be",
+    flagCode: ["be", "us"],
   },
   {
     name: "Francesco Gaudioso",
