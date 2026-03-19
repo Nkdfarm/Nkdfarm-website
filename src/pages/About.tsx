@@ -44,6 +44,17 @@ const boardMembers = [
 ];
 
 const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: "instant", block: "start" }), 100);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-background animate-fade-in">
       <Header />
