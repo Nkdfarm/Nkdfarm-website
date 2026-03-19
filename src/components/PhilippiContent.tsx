@@ -67,14 +67,14 @@ const PhilippiContent = () => {
       </p>
 
       {/* PULL QUOTE */}
-      <div className="border-l-4 border-accent bg-muted rounded-r-lg p-7">
-        <p className="text-xl font-serif italic text-foreground leading-relaxed mb-3">
-          "Despite first impression, the Cape Town Philippi location is perfect to drive a network of FarmBox around the world."
-        </p>
-        <cite className="text-[11px] font-mono font-medium tracking-widest uppercase text-accent not-italic">
-          — Naked Farms Investor Brief, 2025
-        </cite>
-      </div>
+      
+
+
+
+
+
+
+      
 
       <p className="text-lg leading-relaxed text-muted-foreground">
         Below are the six structural advantages of the Philippi site — identified in the Naked Farms investor brief as the strategic rationale for establishing both the FarmLab and FarmBox1 production unit here.
