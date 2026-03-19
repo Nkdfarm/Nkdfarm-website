@@ -2,6 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
 import FarmBoxFinanceContent from "@/components/FarmBoxFinanceContent";
+import PhilippiContent from "@/components/PhilippiContent";
 import { getArticleById, getRelatedArticles } from "@/data/articles";
 import { Facebook, Twitter, Linkedin, Link2, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,6 +26,7 @@ const Article = () => {
   const getCategoryClass = (cat: string) => {
     const normalized = cat.toLowerCase();
     if (normalized.includes("financ")) return "tag-financing";
+    if (normalized.includes("r&d")) return "tag-growth";
     if (normalized.includes("lifestyle")) return "tag-lifestyle";
     if (normalized.includes("community")) return "tag-community";
     if (normalized.includes("wellness")) return "tag-wellness";
@@ -138,6 +140,8 @@ const Article = () => {
           <div className="prose prose-lg max-w-none mb-16 animate-slide-up stagger-2">
             {article.id === "001" ? (
               <FarmBoxFinanceContent />
+            ) : article.id === "002" ? (
+              <PhilippiContent />
             ) : (
               <>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
