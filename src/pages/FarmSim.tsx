@@ -219,17 +219,6 @@ const FarmSim = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground font-mono tracking-wider">
-          <span>© 2025 Naked Farms — Operators of the FarmBox smart greenhouse unit</span>
-          <div className="flex gap-6">
-            <Link to="/" className="hover:text-foreground transition-colors">nakedfarms.com</Link>
-            <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
-            <Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
