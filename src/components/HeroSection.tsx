@@ -4,8 +4,7 @@ const heroLines = [
 "Food globe-trotting has no place in this dystopian age",
 "",
 "",
-"Return to origins\nGrow close to cities\nMaximize yield, minimize waste\nProfitability redefined",
-""];
+"Return to origins\nGrow close to cities\nMaximize yield, minimize waste\nProfitability redefined"];
 
 
 const HeroSection = () => {
