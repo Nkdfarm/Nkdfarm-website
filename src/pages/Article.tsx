@@ -26,6 +26,7 @@ const Article = () => {
   const getCategoryClass = (cat: string) => {
     const normalized = cat.toLowerCase();
     if (normalized.includes("financ")) return "tag-financing";
+    if (normalized.includes("r&d")) return "tag-growth";
     if (normalized.includes("lifestyle")) return "tag-lifestyle";
     if (normalized.includes("community")) return "tag-community";
     if (normalized.includes("wellness")) return "tag-wellness";
