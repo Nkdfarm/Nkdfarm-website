@@ -59,7 +59,7 @@ const boardMembers = [
     role: "Chief Legal Officer",
     bio: "Seasoned legal professional with extensive experience in corporate law, international transactions, and regulatory compliance across multiple jurisdictions.",
     image: "/lovable-uploads/jason-karas.jpeg",
-    flagCode: "hk",
+    flagCode: "au",
   },
 ];
 
