@@ -85,9 +85,9 @@ export const articles: Article[] = [
     readTime: "6 min",
     image: "/lovable-uploads/myarchitectai_fnrldtxiu_sd.png",
     author: {
-      name: "Sofia Rodriguez",
+      name: "Francesco Gaudioso",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
-      bio: "Creative writer and mindfulness practitioner",
+      bio: "Head of Technology",
     },
     content: {
       introduction: "There's something profound about putting pen to paper—the way ink flows across the page, capturing thoughts that might otherwise evaporate. In our digital age, the practice of journaling offers a rare opportunity to slow down, reflect, and connect with ourselves in a tangible, meaningful way.",
