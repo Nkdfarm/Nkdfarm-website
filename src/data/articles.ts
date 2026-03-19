@@ -86,7 +86,7 @@ export const articles: Article[] = [
     image: "/lovable-uploads/myarchitectai_fnrldtxiu_sd.png",
     author: {
       name: "Francesco Gaudioso",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+      avatar: "/lovable-uploads/francesco-gaudioso.jpeg",
       bio: "Head of Technology",
     },
     content: {
