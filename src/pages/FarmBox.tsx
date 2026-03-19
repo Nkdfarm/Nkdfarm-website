@@ -21,7 +21,7 @@ const styles = `
   .fb-page {
     max-width: 820px;
     margin: 0 auto;
-    padding: 80px 60px 120px;
+    padding: 80px 60px 40px;
   }
 
   .fb-header {
