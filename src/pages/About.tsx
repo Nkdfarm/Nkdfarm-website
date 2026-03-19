@@ -10,56 +10,56 @@ const boardMembers = [
     role: "Founder",
     bio: "Serial entrepreneur & UCT GSB MBA. Built global real estate portfolio + \"The Naked Retreat\" luxury hospitality disruptor. TEDx speaker with multimillion exits across China, South Africa, Europe",
     image: "/lovable-uploads/dc6be22a-0a0f-4aef-b154-01b12f59311b.png",
-    flag: "🇿🇦",
+    flagCode: "za",
   },
   {
     name: "Oliver Tittman",
     role: "Chief Executive Officer",
     bio: "MBA entrepreneur pioneering modular construction across 6 countries. XCUBE founder scaling prefab systems that cut deployment 50-80%. TEDx speaker standardizing hotels, housing, infrastructure.",
     image: "/lovable-uploads/bfcee86e-a748-4d16-8ac2-c6a5d67246c1.jpg",
-    flag: "🇧🇪",
+    flagCode: "be",
   },
   {
     name: "Francesco Gaudioso",
     role: "Head of Technology",
     bio: "Mechanical and Energy Engineer driving innovation across OEM projects, off-grid tech, and ocean adventures.",
     image: "/lovable-uploads/3ad422b8-63a9-49e7-96ea-52557ec23949.jpg",
-    flag: "🇮🇹",
+    flagCode: "it",
   },
   {
     name: "Frederick Steinmeyer",
     role: "Head of Life",
     bio: "Test",
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
-    flag: "🇩🇪",
+    flagCode: "de",
   },
   {
     name: "Natalia Ozerova-Jones",
     role: "Test",
     bio: "test",
     image: "/lovable-uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
-    flag: "🇷🇺",
+    flagCode: "ru",
   },
   {
     name: "Robbie Taylor",
     role: "Chief Financial Officer",
     bio: "Finance professional with deep expertise in capital structuring, investment strategy, and sustainable business models across emerging markets.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
-    flag: "🇬🇧",
+    flagCode: "gb",
   },
   {
     name: "Abigail Rutter",
     role: "Executive Assistant",
     bio: "Experienced executive assistant with a background in farming operations and private family office management, bringing organizational excellence to agricultural ventures.",
     image: "/lovable-uploads/abigail-rutter.jpeg",
-    flag: "🇬🇧",
+    flagCode: "gb",
   },
   {
     name: "Jason Karas",
     role: "Chief Legal Officer",
     bio: "Seasoned legal professional with extensive experience in corporate law, international transactions, and regulatory compliance across multiple jurisdictions.",
     image: "/lovable-uploads/jason-karas.jpeg",
-    flag: "🇭🇰",
+    flagCode: "hk",
   },
 ];
 
@@ -123,7 +123,7 @@ const About = () => {
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1">{member.name} <span className="text-base">{member.flag}</span></h3>
+                    <h3 className="text-xl font-bold mb-1 flex items-center gap-2">{member.name} <img src={`https://flagcdn.com/20x15/${member.flagCode}.png`} alt="" className="inline-block" width={20} height={15} /></h3>
                     <p className="text-accent font-medium text-sm">{member.role}</p>
                   </div>
                 </div>
