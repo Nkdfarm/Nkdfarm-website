@@ -58,8 +58,8 @@ const Header = () => {
             
 
             
-            <a href="/travel" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              ​FarmSim   
+            <a href="/farmsim" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+              FarmSim
             </a>
             <a href="/about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               About
