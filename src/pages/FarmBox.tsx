@@ -520,8 +520,8 @@ export default function FarmBox() {
 
           {/* PULLQUOTE */}
           <div className="fb-pullquote">
-            <p>"Zero-capital entrepreneurship — no $300,000 initial investment required."</p>
-            <cite>Core empowerment principle · Bottom of the Pyramid Franchise Model</cite>
+            <p>"An 80/20 capital partnership — the farmer contributes 20%, the funder covers 80%, and ownership transfers in 7 years."</p>
+            <cite>Core financing principle · Pay-to-Own Franchise Model</cite>
           </div>
 
           {/* EMPOWERMENT */}
