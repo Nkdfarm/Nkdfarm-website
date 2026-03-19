@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { Lock } from "lucide-react";
+import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ArticleCard from "@/components/ArticleCard";
 
