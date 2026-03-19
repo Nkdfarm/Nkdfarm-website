@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
 import { ArrowRight } from "lucide-react";
-import farmsimDashboard from "@/assets/farmsim-dashboard.jpg";
+import farmsimDashboard from "@/assets/farmsim-dashboard.png";
 import { Link } from "react-router-dom";
 import ArticleCard from "@/components/ArticleCard";
 
