@@ -45,7 +45,7 @@ const boardMembers = [
     role: "Chief Financial Officer",
     bio: "Finance professional with deep expertise in capital structuring, investment strategy, and sustainable business models across emerging markets.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
-    flagCode: "gb",
+    flagCode: "za",
   },
   {
     name: "Abigail Rutter",
