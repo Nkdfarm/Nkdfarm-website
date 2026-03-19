@@ -26,7 +26,7 @@ const boardMembers = [
   {
     name: "Frederick Steinmeyer",
     role: "Head of Life",
-    bio: "David combines insights from psychology, philosophy, and personal experience to explore what it means to live intentionally. His thoughtful approach to growth emphasizes progress over perfection.",
+    bio: "Test",
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
   },
   {
