@@ -83,10 +83,6 @@ const FarmSim = () => {
       <section className="border-t border-border py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
           <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700">
-            <p className="font-mono text-[11px] text-accent tracking-[0.2em] mb-4 flex items-center gap-2.5">
-              <span className="w-6 h-px bg-accent" />
-              01 — What is FarmSim
-            </p>
             <h2 className="text-3xl lg:text-4xl font-bold leading-[1.1]">
               Numbers that<br />farmers can <span className="text-accent italic">trust.</span>
             </h2>
