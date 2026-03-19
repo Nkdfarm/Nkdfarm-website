@@ -4,16 +4,16 @@ const heroLines = [
 "Food globe-trotting has no place in this dystopian age",
 "",
 "",
-"Return to origins",
+"Return to origins\nGrow close to cities\nMaximize yield, minimize waste\nProfitability redefined",
 "",
 "",
-"Grow close to cities",
+"\n",
 "",
 "",
-"Maximize yield, minimize waste",
+"\n",
 "",
 "",
-"Profitability redefined",
+"\n",
 "",
 "",
 ""];
@@ -43,9 +43,11 @@ const HeroSection = () => {
                 {heroLines.map((line, i) =>
                 line === "" ?
                 <span key={i} className="block h-4" /> :
-
-                <span key={i} className={`block ${line === "Return to origins" || line === "Grow close to cities" || line === "Maximize yield, minimize waste" || line === "Profitability redefined" ? "text-[hsl(var(--brand-accent))]" : ""}`}>{line}</span>
-
+                line === "\n" ?
+                <span key={i} className="block h-4" /> :
+                line.includes("\n") ?
+                <span key={i} className="block text-[hsl(var(--brand-accent))] whitespace-pre-line">{line}</span> :
+                <span key={i} className="block">{line}</span>
                 )}
               </span>
             </p>
