@@ -534,8 +534,8 @@ export default function FarmBox() {
               {[
                 {
                   id: "A",
-                  head: "Zero-Capital Entry",
-                  body: "No $300,000 start-up capital required. Entrepreneurs operate under a Pay-to-Own contract structure from day one.",
+                  head: "80/20 Capital Partnership",
+                  body: "The farmer contributes 20% ($60,000) while a funder provides 80% ($240,000). A structured Pay-to-Own model from day one.",
                 },
                 {
                   id: "B",
