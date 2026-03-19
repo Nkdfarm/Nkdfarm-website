@@ -45,7 +45,7 @@ const boardMembers = [
     name: "Abigail Rutter",
     role: "Executive Assistant",
     bio: "Experienced executive assistant with a background in farming operations and private family office management, bringing organizational excellence to agricultural ventures.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+    image: "/lovable-uploads/abigail-rutter.jpeg",
   },
   {
     name: "Jason Karas",
