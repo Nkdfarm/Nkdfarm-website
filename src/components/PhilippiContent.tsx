@@ -1,4 +1,5 @@
 import { MapPin, Scale, Users, GraduationCap, Wind, Expand } from "lucide-react";
+import climateZonesMap from "@/assets/climate-zones-map.png";
 
 const SectionHeading = ({ children }: {children: React.ReactNode;}) =>
 <h2 className="text-2xl md:text-3xl font-bold mb-2 pt-2 border-t-2 border-accent/30 pb-3 text-foreground font-serif">
