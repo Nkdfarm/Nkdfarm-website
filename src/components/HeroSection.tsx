@@ -5,17 +5,6 @@ const heroLines = [
 "",
 "",
 "Return to origins\nGrow close to cities\nMaximize yield, minimize waste\nProfitability redefined",
-"",
-"",
-"\n",
-"",
-"",
-"\n",
-"",
-"",
-"\n",
-"",
-"",
 ""];
 
 
