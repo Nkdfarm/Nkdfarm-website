@@ -31,7 +31,7 @@ const boardMembers = [
     role: "Head of Life",
     bio: "Test",
     image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
-    flagCode: "de",
+    flagCode: ["de", "za"],
   },
   {
     name: "Natalia Ozerova-Jones",
