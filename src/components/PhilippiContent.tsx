@@ -72,8 +72,8 @@ const PhilippiContent = () => {
           src="/lovable-uploads/philippi-video.mp4"
           controls
           className="w-full"
-          preload="metadata"
-        />
+          preload="metadata" />
+        
       </div>
 
 
@@ -126,8 +126,8 @@ const PhilippiContent = () => {
       {/* CLIMATE IN DEPTH */}
       <div>
         <SectionHeading>Climate in Depth — One Site, Global Reach</SectionHeading>
-        <p className="text-lg leading-relaxed text-muted-foreground mt-4">
-          The climate advantage deserves particular attention for investor audiences. South Africa's Western Cape sits at the precise transition between subtropical and temperate bands — a position that mirrors the climate profile of the world's largest premium fresh food demand centres. This is a structural feature of the site selection that transforms Philippi into a globally valid R&D reference point.
+        <p className="text-lg leading-relaxed text-muted-foreground mt-4">The climate advantage deserves a particular attention. South Africa's Western Cape sits at the precise transition between subtropical and temperate bands — a position that mirrors the climate profile of the world's largest premium fresh food demand centres. This is a structural feature of the site selection that transforms Philippi into a globally valid R&D reference point.
+
         </p>
 
         <div className="bg-card border border-accent/20 rounded-2xl p-8 md:p-10 mt-8 relative overflow-hidden">
