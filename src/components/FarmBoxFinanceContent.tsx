@@ -72,7 +72,7 @@ const FarmBoxFinanceContent = () => {
             <p className="text-sm text-foreground leading-relaxed">The capital provider who finances 80% of the FarmBox build cost ($240,000 of the $300,000 total). The funder recovers capital plus interest from farm revenue over 7 years.</p>
           </div>
           <div className="rounded-xl p-5 bg-[hsl(40_60%_92%)] border border-[hsl(40_50%_80%)]">
-            <div className="text-xs font-extrabold tracking-wider uppercase text-[hsl(30_60%_40%)] mb-2 font-sans">The Farmer</div>
+            <div className="text-xs font-extrabold tracking-wider uppercase text-[hsl(30_60%_40%)] dark:text-foreground mb-2 font-sans">The Farmer</div>
             <p className="text-sm text-foreground leading-relaxed">The vetted operator who contributes 20% of the FarmBox build cost ($60,000) from personal funds, runs daily operations, earns a living wage, and receives full legal ownership of the FarmBox unit at the 7-year mark.</p>
           </div>
         </div>
