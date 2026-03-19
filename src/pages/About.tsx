@@ -41,6 +41,18 @@ const boardMembers = [
     bio: "Finance professional with deep expertise in capital structuring, investment strategy, and sustainable business models across emerging markets.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
   },
+  {
+    name: "Abigail Rutter",
+    role: "Executive Assistant",
+    bio: "Experienced executive assistant with a background in farming operations and private family office management, bringing organizational excellence to agricultural ventures.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+  },
+  {
+    name: "Jason Karas",
+    role: "Growth Consultant",
+    bio: "Creative growth leader with deep experience in business formation, product development, and strategic partnerships across multiple industries.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+  },
 ];
 
 const About = () => {
