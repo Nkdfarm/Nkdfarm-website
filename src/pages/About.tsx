@@ -123,7 +123,7 @@ const About = () => {
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                    <h3 className="text-xl font-bold mb-1">{member.name} <span className="text-base">{member.flag}</span></h3>
                     <p className="text-accent font-medium text-sm">{member.role}</p>
                   </div>
                 </div>
