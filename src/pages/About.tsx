@@ -36,7 +36,7 @@ const boardMembers = [
     image: "/lovable-uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
   },
   {
-    name: "Robbie",
+    name: "Robbie Taylor",
     role: "Chief Financial Officer",
     bio: "",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80",
