@@ -417,8 +417,8 @@ export default function FarmBox() {
           <div className="fb-section" ref={addRef(0)}>
             <p className="fb-intro">
               A precision-agriculture franchise combining{" "}
-              <strong>AI-driven production, an 80/20 capital partnership</strong>{" "}
-              and hyper-local distribution — placing fresh food
+              <strong>AI-driven production, zero-capital</strong>{" "}
+              entrepreneurship, and hyper-local distribution — placing fresh food
               sovereignty within reach of any urban community.
             </p>
             <div className="fb-metrics">
@@ -520,8 +520,8 @@ export default function FarmBox() {
 
           {/* PULLQUOTE */}
           <div className="fb-pullquote">
-            <p>"An 80/20 capital partnership — the farmer contributes 20%, the funder covers 80%, and ownership transfers in 7 years."</p>
-            <cite>Core financing principle · Pay-to-Own Franchise Model</cite>
+            <p>"Zero-capital entrepreneurship — no $300,000 initial investment required."</p>
+            <cite>Core empowerment principle · Bottom of the Pyramid Franchise Model</cite>
           </div>
 
           {/* EMPOWERMENT */}
@@ -534,8 +534,8 @@ export default function FarmBox() {
               {[
                 {
                   id: "A",
-                  head: "80/20 Capital Partnership",
-                  body: "The farmer contributes 20% ($60,000) while a funder provides 80% ($240,000). A structured Pay-to-Own model from day one.",
+                  head: "Zero-Capital Entry",
+                  body: "No $300,000 start-up capital required. Entrepreneurs operate under a Pay-to-Own contract structure from day one.",
                 },
                 {
                   id: "B",
