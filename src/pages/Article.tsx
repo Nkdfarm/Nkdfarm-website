@@ -141,6 +141,7 @@ const Article = () => {
               <FarmBoxFinanceContent />
             ) : article.id === "002" ? (
               <PhilippiContent />
+            ) : (
               <>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
                   {article.content.introduction}
