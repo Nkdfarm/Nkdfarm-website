@@ -78,11 +78,11 @@ export const articles: Article[] = [
   },
   {
     id: "002",
-    title: "Ink-Stained Insights",
-    subtitle: "The art of journaling for a more intentional lifestyle",
-    category: "Lifestyle",
-    date: "Oct 23, 2024",
-    readTime: "6 min",
+    title: "Why Philippi? Six Strategic Advantages",
+    subtitle: "Cape Town's Philippi township is the perfect launchpad for a global network of FarmBox smart greenhouses — and here is exactly why.",
+    category: "R&D",
+    date: "Mar 19, 2026",
+    readTime: "8 min",
     image: "/lovable-uploads/myarchitectai_fnrldtxiu_sd.png",
     author: {
       name: "Francesco Gaudioso",
@@ -90,28 +90,11 @@ export const articles: Article[] = [
       bio: "Head of Technology",
     },
     content: {
-      introduction: "There's something profound about putting pen to paper—the way ink flows across the page, capturing thoughts that might otherwise evaporate. In our digital age, the practice of journaling offers a rare opportunity to slow down, reflect, and connect with ourselves in a tangible, meaningful way.",
-      sections: [
-        {
-          heading: "Why Analog Matters",
-          content: "While digital tools have their place, there's neuroscience behind why handwriting engages our brain differently. The physical act of writing slows our thinking, allowing for deeper processing and reflection. It's a form of mindfulness in action, anchoring us in the present moment while we explore our inner landscape.",
-        },
-        {
-          heading: "Creating Your Practice",
-          content: "Your journaling practice doesn't need to be elaborate or time-consuming. Start with five minutes each morning or evening. Write freely without judgment—this isn't about perfect prose or profound insights. It's about showing up for yourself, creating space for reflection, and building a relationship with your thoughts and feelings.",
-        },
-        {
-          heading: "Prompts for Deeper Reflection",
-          content: "When you're not sure what to write, prompts can guide you: What am I grateful for today? What challenged me and what did I learn? What do I need more of in my life? What can I let go of? These questions invite introspection and help us identify patterns in our thoughts and behaviors.",
-        },
-        {
-          heading: "The Gift of Looking Back",
-          content: "One of journaling's greatest gifts reveals itself over time. Looking back through old entries, we see how we've grown, what we've overcome, and patterns we might want to change. This historical perspective offers wisdom we can't access in the present moment alone.",
-        },
-      ],
-      conclusion: "Journaling is more than record-keeping—it's a practice of self-discovery and intentional living. Those ink-stained pages become a map of your inner journey, a testament to your growth, and a tool for creating the life you envision. Start today, even if just for five minutes. Your future self will thank you.",
+      introduction: "",
+      sections: [],
+      conclusion: "",
     },
-    tags: ["journaling", "mindfulness", "self-reflection", "lifestyle"],
+    tags: ["philippi", "R&D", "FarmBox", "cape-town", "investor-brief", "climate"],
   },
   {
     id: "003",
