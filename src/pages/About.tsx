@@ -49,7 +49,7 @@ const boardMembers = [
   },
   {
     name: "Jason Karas",
-    role: "CLO",
+    role: "Chief Legal Officer",
     bio: "Creative growth leader with deep experience in business formation, product development, and strategic partnerships across multiple industries.",
     image: "/lovable-uploads/jason-karas.jpeg",
   },
