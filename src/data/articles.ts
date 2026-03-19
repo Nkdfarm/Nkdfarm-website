@@ -78,8 +78,8 @@ export const articles: Article[] = [
   },
   {
     id: "002",
-    title: "Why Philippi? Six Strategic Advantages",
-    subtitle: "Cape Town's Philippi township is the perfect launchpad for a global network of FarmBox smart greenhouses — and here is exactly why.",
+    title: "Building in Philippi: Six Strategic Advantages",
+    subtitle: "Cape Town's Philippi agriculture land is the perfect launchpad for a global network of FarmBox smart greenhouses — and here is exactly why.",
     category: "R&D",
     date: "Mar 19, 2026",
     readTime: "8 min",
