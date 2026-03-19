@@ -31,9 +31,7 @@ const App = () => (
           <Route path="/farmbox" element={<FarmBox />} />
           <Route path="/farmsim" element={<FarmSimPage />} />
           <Route path="/wellness" element={<Wellness />} />
-          <Route path="/travel" element={<Travel />} />
           <Route path="/creativity" element={<Creativity />} />
-          <Route path="/growth" element={<Growth />} />
           <Route path="/about" element={<About />} />
           
           <Route path="/contact" element={<Contact />} />

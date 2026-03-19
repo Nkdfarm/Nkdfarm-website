@@ -230,19 +230,6 @@ const Article = () => {
           </div>
         </article>
 
-        {/* Related Articles */}
-        <section className="bg-muted py-16 animate-fade-in">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-8 animate-slide-up">You might also like</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedArticles.map((relatedArticle, index) => (
-                <div key={relatedArticle.id} className={`animate-slide-up stagger-${Math.min(index + 1, 3)}`}>
-                  <ArticleCard {...relatedArticle} size="small" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );
