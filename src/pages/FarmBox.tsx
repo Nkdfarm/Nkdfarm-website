@@ -506,7 +506,7 @@ export default function FarmBox() {
                   <div className="fb-bar-group">
                     <div className="fb-bar-top-label">Farmbox</div>
                     <div className="fb-bars">
-                      <div className="fb-bar-new">84.1¢</div>
+                      <div className="fb-bar-new">100.0¢</div>
                     </div>
                     <div className="fb-bar-seg-label">Producer keeps all</div>
                   </div>
