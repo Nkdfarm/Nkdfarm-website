@@ -424,7 +424,7 @@ export default function FarmBox() {
             <div className="fb-metrics">
               {[
                 { value: "95", sup: "%", desc: "Less water vs.\nfield agriculture" },
-                { value: "500", sup: "", desc: "Families served\nper unit" },
+                { value: "1000", sup: "", desc: "Families served\nper unit" },
                 { value: "84", sup: "¢", desc: "Food dollar\nretained locally" },
               ].map((m, i) => (
                 <div className="fb-metric" key={i}>
@@ -581,7 +581,7 @@ export default function FarmBox() {
           {/* FOOTER */}
           <div className="fb-footer">
             <div className="fb-footer-left">The Farmbox Solution · Urban Food Sovereignty Blueprint</div>
-            <div className="fb-footer-right">4,000 sq.m · 500 families · 10-mile radius</div>
+            <div className="fb-footer-right">4,000 sq.m · 1000 families · 10-mile radius</div>
           </div>
 
         </div>
