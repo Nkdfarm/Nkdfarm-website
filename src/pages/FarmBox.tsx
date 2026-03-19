@@ -377,7 +377,7 @@ export default function FarmBox() {
     const observers = sectionRefs.current.map((el) => {
       if (!el) return null;
       const obs = new IntersectionObserver(
-        ([entry]) => { if (entry.isIntersecting) el.classList.add("visible"); },
+        ([entry]) => {if (entry.isIntersecting) el.classList.add("visible");},
         { threshold: 0.1 }
       );
       obs.observe(el);
@@ -386,7 +386,7 @@ export default function FarmBox() {
     return () => observers.forEach((o) => o && o.disconnect());
   }, []);
 
-  const addRef = (i: number) => (el: HTMLDivElement | null) => { sectionRefs.current[i] = el; };
+  const addRef = (i: number) => (el: HTMLDivElement | null) => {sectionRefs.current[i] = el;};
 
   return (
     <>
@@ -423,18 +423,18 @@ export default function FarmBox() {
             </p>
             <div className="fb-metrics">
               {[
-                { value: "95", sup: "%", desc: "Less water vs.\nfield agriculture" },
-                { value: "1000", sup: "", desc: "Families served\nper unit" },
-                { value: "84", sup: "¢", desc: "Food dollar\nretained locally" },
-              ].map((m, i) => (
-                <div className="fb-metric" key={i}>
+              { value: "95", sup: "%", desc: "Less water vs.\nfield agriculture" },
+              { value: "1000", sup: "", desc: "Families served\nper unit" },
+              { value: "84", sup: "¢", desc: "Food dollar\nretained locally" }].
+              map((m, i) =>
+              <div className="fb-metric" key={i}>
                   <div className="fb-metric-value">
                     {m.value}
                     {m.sup && <sup>{m.sup}</sup>}
                   </div>
                   <div className="fb-metric-desc">{m.desc}</div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
 
@@ -458,17 +458,17 @@ export default function FarmBox() {
                 <div className="fb-col-label">The Essential 5 · Crop Rotation</div>
                 <div className="fb-crops">
                   {[
-                    { g: "🍅", n: "Tomatoes" },
-                    { g: "🥒", n: "Cucumbers" },
-                    { g: "🥬", n: "Greens" },
-                    { g: "🫑", n: "Peppers" },
-                    { g: "🍓", n: "Strawberries" },
-                  ].map((c) => (
-                    <div className="fb-crop" key={c.n}>
+                  { g: "🍅", n: "Tomatoes" },
+                  { g: "🥒", n: "Cucumbers" },
+                  { g: "🥬", n: "Greens" },
+                  { g: "🫑", n: "Peppers" },
+                  { g: "🍓", n: "Strawberries" }].
+                  map((c) =>
+                  <div className="fb-crop" key={c.n}>
                       <div className="fb-crop-glyph">{c.g}</div>
                       <div className="fb-crop-name">{c.n}</div>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
             </div>
@@ -520,7 +520,8 @@ export default function FarmBox() {
 
           {/* PULLQUOTE */}
           <div className="fb-pullquote">
-            <p>"Zero-capital entrepreneurship — no $300,000 initial investment required."</p>
+            <p>"80/20 capital split
+Access a $300K FarmBox with only $60K personal contribution"</p>
             <cite>Core empowerment principle · Bottom of the Pyramid Franchise Model</cite>
           </div>
 
@@ -531,29 +532,28 @@ export default function FarmBox() {
               <h2 className="fb-section-title">Empowerment — Ownership Pathways</h2>
             </div>
             <div className="fb-pillars">
-              {[
-                {
-                  id: "A",
-                  head: "Zero-Capital Entry",
-                  body: "No $300,000 start-up capital required. Entrepreneurs operate under a Pay-to-Own contract structure from day one.",
-                },
-                {
-                  id: "B",
-                  head: "7-Year Full Ownership",
-                  body: "A clearly defined pathway to full ownership over seven years, with progressive equity accumulation built into the franchise agreement.",
-                },
-                {
-                  id: "C",
-                  head: "AI-Proof Careers",
-                  body: "Stable, local roles resistant to white-collar automation — rooted in physical production, logistics, and community relationships.",
-                },
-              ].map((p) => (
-                <div className="fb-pillar" key={p.id}>
+              {[{
+                id: "A",
+                head: "Zero-Capital Entry",
+                body: "No $300,000 start-up capital required. Entrepreneurs operate under a Pay-to-Own contract structure from day one."
+              },
+              {
+                id: "B",
+                head: "7-Year Full Ownership",
+                body: "A clearly defined pathway to full ownership over seven years, with progressive equity accumulation built into the franchise agreement."
+              },
+              {
+                id: "C",
+                head: "AI-Proof Careers",
+                body: "Stable, local roles resistant to white-collar automation — rooted in physical production, logistics, and community relationships."
+              }].
+              map((p) =>
+              <div className="fb-pillar" key={p.id}>
                   <div className="fb-pillar-num">{p.id}</div>
                   <h3 className="fb-pillar-head">{p.head}</h3>
                   <p className="fb-pillar-body">{p.body}</p>
                 </div>
-              ))}
+              )}
             </div>
 
             <hr className="fb-divider" />
@@ -578,10 +578,14 @@ export default function FarmBox() {
             </div>
           </div>
 
-
+          {/* FOOTER */}
+          <div className="fb-footer">
+            <div className="fb-footer-left">The Farmbox Solution · Urban Food Sovereignty Blueprint</div>
+            <div className="fb-footer-right">4,000 sq.m · 1000 families · 10-mile radius</div>
+          </div>
 
         </div>
       </div>
-    </>
-  );
+    </>);
+
 }
