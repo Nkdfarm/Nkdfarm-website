@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { ArrowRight, Lock } from "lucide-react";
+import { Lock } from "lucide-react";
 import { Link } from "react-router-dom";
+import ArticleCard from "@/components/ArticleCard";
 
 const FarmSim = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -195,23 +196,16 @@ const FarmSim = () => {
         </div>
       </section>
 
-      {/* Link to Finance Article — styled like Travel philosophy section */}
       <section className="pb-16 lg:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl bg-card p-8 md:p-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Understand the Financial Model</h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Before you configure your FarmBox project, dive into the full financing breakdown — the 80/20 capital formula, the 7-year ownership timeline, and how the numbers work for you from day one.
-              </p>
-              <Link
-                to="/article/001"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-3 font-medium transition-all hover:scale-105"
-              >
-                How to Finance My FarmBox
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+          <div className="max-w-md mx-auto">
+            <ArticleCard
+              id="001"
+              title="How to Finance My FarmBox"
+              category="Financing"
+              date="Mar 19, 2026"
+              image="/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg"
+            />
           </div>
         </div>
       </section>
