@@ -511,9 +511,9 @@ export default function FarmBox() {
                     <div className="fb-bar-seg-label">Producer keeps all</div>
                   </div>
                 </div>
-                <div className="fb-chart-note">
-                  Direct-to-consumer captures nearly 85% of value typically lost to middlemen
-                </div>
+                
+
+                
               </div>
             </div>
           </div>
