@@ -519,11 +519,11 @@ export default function FarmBox() {
           </div>
 
           {/* PULLQUOTE */}
-          <div className="fb-pullquote">
-            <p>"80/20 capital split
- Access a $300K FarmBox with only $60K personal contribution"</p>
-            <cite>Core empowerment principle · Bottom of the Pyramid Franchise Model</cite>
-          </div>
+          
+
+
+
+          
 
           {/* EMPOWERMENT */}
           <div className="fb-section" ref={addRef(3)}>
