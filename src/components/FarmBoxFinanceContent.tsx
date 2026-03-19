@@ -307,7 +307,7 @@ const FarmBoxFinanceContent = () => {
         <p className="text-muted-foreground mb-4">The FarmBox model is designed for serious, committed farmers. Because the funder carries 80% of the upfront capital risk, the vetting process exists to protect all parties. You can expect to demonstrate:</p>
         <ul className="list-none p-0 font-sans">
           <ChecklistItem>Availability of $60,000 in personal funds — the 20% equity contribution</ChecklistItem>
-          <ChecklistItem>Agricultural experience or relevant farm management skills</ChecklistItem>
+          <ChecklistItem>Relevant management skills, no agricultural experience required</ChecklistItem>
           <ChecklistItem>Commitment to full-time operation of the FarmBox unit</ChecklistItem>
           <ChecklistItem>Suitable land or site access — assessed during the Naked Farms engineering feasibility phase</ChecklistItem>
           <ChecklistItem>Alignment with the FarmBox community food supply mission</ChecklistItem>
