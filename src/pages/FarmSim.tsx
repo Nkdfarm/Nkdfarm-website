@@ -34,7 +34,7 @@ const FarmSim = () => {
         }} />
         <div className="absolute w-[600px] h-[600px] rounded-full top-[10%] left-[40%] bg-accent/5 blur-3xl pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-24 lg:pt-12 lg:pb-32 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-24 lg:pt-12 lg:pb-32 relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
           {/* Left */}
           <div className="flex flex-col justify-center">
             <h1 className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-100 text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] mb-3">
@@ -43,12 +43,14 @@ const FarmSim = () => {
             <p className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-200 text-xl md:text-2xl text-muted-foreground italic font-serif mb-9 leading-relaxed">
               Before the first seed is planted.
             </p>
-            <p className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-300 text-sm text-muted-foreground leading-[1.8] max-w-[420px] mb-12">
+            <p className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-300 text-sm text-muted-foreground leading-[1.8]">
               FarmSim is a dedicated financial simulator for FarmBox smart greenhouse projects. Configure your unit, run your numbers, and arrive at your investment decision with full visibility on CapEx, OpEx, and projected ROI.
             </p>
+          </div>
 
-            {/* Coming Soon Block */}
-            <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-[400ms] relative max-w-[420px] rounded-xl p-7 bg-accent/5 border border-accent/20 overflow-hidden">
+          {/* Right: Coming Soon Block */}
+          <div className="lg:col-span-2">
+            <div className="fs-fade-up opacity-0 translate-y-6 transition-all duration-700 delay-[400ms] relative rounded-xl p-7 bg-accent/5 border border-accent/20 overflow-hidden">
               <div className="absolute top-0 left-0 w-[3px] h-full bg-gradient-to-b from-accent to-transparent" />
               <div className="font-mono text-[10px] font-medium tracking-[0.2em] uppercase text-accent mb-3.5 flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
