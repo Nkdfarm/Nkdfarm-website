@@ -121,7 +121,7 @@ const conclusions = [
   { title: "The Greenhouse Can Serve ~569 Households Per Week", desc: "Assuming premium CT households consume 2× the national average, weekly net supply supports approximately 569 households.", dot: "bg-accent" },
   { title: "Dubai and Singapore Offer 3–3.3× Cape Town Revenue", desc: "The same physical greenhouse would generate R47–50M/yr in Dubai or Singapore (vs R15M in CT) — a compelling case for future licensing.", dot: "bg-yellow-500" },
   { title: "Winter Is the Primary Risk Period", desc: "The June–August DLI trough reduces weekly output from ~2,469 kg to ~1,182 kg (-52%). Operators should plan cash flow management for weeks 23–35.", dot: "bg-destructive" },
-  { title: "CAPEX Payback Is Viable at Scale", desc: "Total build cost of R4.625M at 70% debt financing yields annual loan repayments of ~R698K. The operation can sustain debt service from Year 1.", dot: "bg-accent" },
+  
 ];
 
 // ── Colour helpers for charts ──
