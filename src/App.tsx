@@ -15,6 +15,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FarmBox from "./pages/FarmBox";
 import FarmSimPage from "./pages/FarmSim";
+import FarmSimTest from "./pages/FarmSimTest";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
