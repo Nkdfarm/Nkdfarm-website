@@ -113,6 +113,9 @@ const Header = () => {
               <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
                 FarmSim
               </a>
+              <a href="/farmsim-test" className="text-sm font-medium hover:text-accent transition-colors">
+                FarmSim Test
+              </a>
               <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
                 About
               </a>
