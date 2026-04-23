@@ -257,32 +257,6 @@ const FarmBoxAI = () => {
         </div>
       </section>
 
-      {/* ROADMAP */}
-      <section id="roadmap" className="bg-card py-20 lg:py-28">
-        <div className="max-w-2xl mx-auto px-6">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-accent mb-4">Go-to-Market</p>
-            <h2 className="font-serif text-3xl lg:text-5xl font-normal leading-[1.15]">Phased deployment roadmap</h2>
-          </div>
-
-          <div className="relative mt-10">
-            <div className="absolute left-[23px] top-0 bottom-0 w-px bg-border" />
-            {roadmap.map((r) => (
-              <div key={r.n} className="reveal opacity-0 translate-y-6 transition-all duration-700 flex gap-6 pb-8 relative">
-                <div className={`flex-shrink-0 w-12 h-12 rounded-full border-2 flex items-center justify-center text-sm font-bold relative z-10 ${r.active ? "bg-accent border-accent text-accent-foreground" : "bg-background border-border text-muted-foreground"}`}>
-                  {r.n}
-                </div>
-                <div className="pt-2">
-                  <div className="text-xs font-semibold tracking-[0.1em] uppercase text-accent mb-1">{r.phase}</div>
-                  <h3 className="font-serif text-xl mb-2">{r.t}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed max-w-[52ch]">{r.d}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section id="contact" className="text-center py-24 lg:py-28 relative overflow-hidden">
         <div className="absolute inset-0 z-0" style={{
