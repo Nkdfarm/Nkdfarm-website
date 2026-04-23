@@ -69,9 +69,6 @@ const HeroSection = () => {
                 <ArrowUpRight className="ml-2 w-4 h-4 transition-transform group-hover:rotate-45" />
               </Button>
             </a>
-            <a href="#articles" className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-2 transition-colors">
-              Explore the model →
-            </a>
           </div>
         </div>
       </div>
