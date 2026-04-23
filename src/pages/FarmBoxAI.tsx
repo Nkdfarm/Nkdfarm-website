@@ -51,12 +51,6 @@ const FarmBoxAI = () => {
     { l: "Min GPU Load", v: ">60%", d: "Minimum utilisation for sufficient heat; backup heat pump bridges any gap" },
   ];
 
-  const roadmap = [
-    { n: 1, phase: "Phase 1 · Months 1–6", t: "Site & Anchor Client", d: "Secure 1–2 ha peri-urban site (Essex, Kent, Midlands) near a grid substation. Pre-sell GPU compute to an anchor AI/SaaS tenant to underwrite CapEx.", active: true },
-    { n: 2, phase: "Phase 2 · Months 6–12", t: "Funding & Offtake", d: "Secure Innovate UK grants and AgriTech private equity. Obtain a letter of intent from a regional supermarket or foodservice distributor before construction." },
-    { n: 3, phase: "Phase 3 · Year 2", t: "Pilot Build & Validate", d: "Deploy GPU pod + FarmBox modules. Validate the heat-to-harvest loop, crop yields, and compute uptime over four full growing seasons." },
-    { n: 4, phase: "Phase 4 · Year 3+", t: "Scale & Replicate", d: "Roll out modular units to additional UK sites and European cold climates. License the integrated model to third-party data centre operators globally." },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -251,32 +245,6 @@ const FarmBoxAI = () => {
                 <span className="text-xs text-muted-foreground uppercase tracking-[0.08em] block mb-2">{m.l}</span>
                 <span className="font-serif text-3xl lg:text-4xl text-accent block leading-tight mb-2">{m.v}</span>
                 <p className="text-sm text-muted-foreground leading-relaxed">{m.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ROADMAP */}
-      <section id="roadmap" className="bg-card py-20 lg:py-28">
-        <div className="max-w-2xl mx-auto px-6">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-accent mb-4">Go-to-Market</p>
-            <h2 className="font-serif text-3xl lg:text-5xl font-normal leading-[1.15]">Phased deployment roadmap</h2>
-          </div>
-
-          <div className="relative mt-10">
-            <div className="absolute left-[23px] top-0 bottom-0 w-px bg-border" />
-            {roadmap.map((r) => (
-              <div key={r.n} className="reveal opacity-0 translate-y-6 transition-all duration-700 flex gap-6 pb-8 relative">
-                <div className={`flex-shrink-0 w-12 h-12 rounded-full border-2 flex items-center justify-center text-sm font-bold relative z-10 ${r.active ? "bg-accent border-accent text-accent-foreground" : "bg-background border-border text-muted-foreground"}`}>
-                  {r.n}
-                </div>
-                <div className="pt-2">
-                  <div className="text-xs font-semibold tracking-[0.1em] uppercase text-accent mb-1">{r.phase}</div>
-                  <h3 className="font-serif text-xl mb-2">{r.t}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed max-w-[52ch]">{r.d}</p>
-                </div>
               </div>
             ))}
           </div>
