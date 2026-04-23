@@ -21,13 +21,6 @@ const FarmBoxAI = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
-  const steps = [
-    { n: "01", t: "Containerised GPU Pod", d: "A liquid-cooled AI data centre container (250 kW–2 MW) runs 24/7 AI inference workloads, generating continuous, stable thermal output of 40–65°C from the liquid cooling loop." },
-    { n: "02", t: "Heat Exchanger Loop", d: "A closed-loop heat exchanger transfers thermal energy from server coolant to the greenhouse HVAC and root-zone heating circuits — with zero fluid mixing or contamination risk." },
-    { n: "03", t: "FarmBox Hydroponic Module", d: "NFT or DWC growing channels maintain 18–22°C root-zone temperature. Leafy greens, herbs, and microgreens thrive in a GPS-monitored stable environment, 365 days per year." },
-    { n: "04", t: "Smart Climate Control", d: "IoT sensors and Node-RED automation balance heat distribution, CO₂ supplementation, and lighting — adapting in real-time to both GPU load fluctuations and crop growth demands." },
-  ];
-
   const farmBenefits = [
     "Near-zero heating cost — eliminates the #1 operating expense in cold climates",
     "365-day crop production regardless of external temperature or season",
