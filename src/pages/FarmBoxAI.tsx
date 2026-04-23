@@ -84,7 +84,7 @@ const FarmBoxAI = () => {
               Every FarmBox is run by a brain — not a manual.
             </p>
             <p className="ai-fade opacity-0 translate-y-6 transition-all duration-700 delay-300 text-sm md:text-base text-muted-foreground leading-[1.85] max-w-xl">
-              FarmBox AI Power is the autonomous control system at the heart of every Naked Farms greenhouse. It senses, predicts, and acts thousands of times per day so growers can focus on the crop — not the controls.
+              FarmBox modules are the autonomous control system at the heart of every Naked Farms greenhouse. They sense, predict, and act thousands of times per day so growers can focus on the crop — not the controls.
             </p>
           </div>
 
