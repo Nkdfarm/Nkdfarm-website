@@ -65,7 +65,7 @@ const FarmBoxAI = () => {
             growing together
           </h1>
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-200 text-base md:text-lg text-muted-foreground font-light max-w-3xl mx-auto mb-8 leading-relaxed text-left md:text-center space-y-4">
-            <p>FarmBox is a modular farm that adapts to climate, crop, any community.</p>
+            <p>FarmBox is a modular farm system designed to adapt to a wide range of climates, crops, and community requirements.</p>
             <p>In cold regions, FarmBox pairs the growing space with a containerised AI data center — using the server waste heat that would otherwise be lost to the atmosphere as the greenhouse's primary heat source. Free, continuous, and available around the clock.</p>
             <p>The data center runs cooler. The farm runs warmer. Energy bills shrink on both sides.</p>
             <p>Beyond the energy equation, the same computing power that drives AI workloads monitors plant health, optimises nutrients, and predicts harvests in real time.</p>
