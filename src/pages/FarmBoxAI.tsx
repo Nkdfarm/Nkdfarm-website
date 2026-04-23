@@ -67,10 +67,6 @@ const FarmBoxAI = () => {
         }} />
 
         <div className="relative z-10 max-w-4xl mx-auto">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700 inline-flex items-center gap-2 bg-accent/10 text-accent text-xs font-semibold tracking-[0.09em] uppercase px-4 py-2 rounded-full mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            Cold Climate Innovation · UK
-          </div>
           <h1 className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 font-serif text-4xl md:text-6xl lg:text-7xl font-normal leading-[1.1] mb-6">
             Where <em className="italic text-accent">AI Heat</em><br />
             Grows Tomorrow's Food
