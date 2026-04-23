@@ -51,12 +51,6 @@ const FarmBoxAI = () => {
     { l: "Min GPU Load", v: ">60%", d: "Minimum utilisation for sufficient heat; backup heat pump bridges any gap" },
   ];
 
-  const roadmap = [
-    { n: 1, phase: "Phase 1 · Months 1–6", t: "Site & Anchor Client", d: "Secure 1–2 ha peri-urban site (Essex, Kent, Midlands) near a grid substation. Pre-sell GPU compute to an anchor AI/SaaS tenant to underwrite CapEx.", active: true },
-    { n: 2, phase: "Phase 2 · Months 6–12", t: "Funding & Offtake", d: "Secure Innovate UK grants and AgriTech private equity. Obtain a letter of intent from a regional supermarket or foodservice distributor before construction." },
-    { n: 3, phase: "Phase 3 · Year 2", t: "Pilot Build & Validate", d: "Deploy GPU pod + FarmBox modules. Validate the heat-to-harvest loop, crop yields, and compute uptime over four full growing seasons." },
-    { n: 4, phase: "Phase 4 · Year 3+", t: "Scale & Replicate", d: "Roll out modular units to additional UK sites and European cold climates. License the integrated model to third-party data centre operators globally." },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
