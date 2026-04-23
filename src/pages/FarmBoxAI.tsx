@@ -21,13 +21,6 @@ const FarmBoxAI = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
-  const steps = [
-    { n: "01", t: "Containerised GPU Pod", d: "A liquid-cooled AI data centre container (250 kW–2 MW) runs 24/7 AI inference workloads, generating continuous, stable thermal output of 40–65°C from the liquid cooling loop." },
-    { n: "02", t: "Heat Exchanger Loop", d: "A closed-loop heat exchanger transfers thermal energy from server coolant to the greenhouse HVAC and root-zone heating circuits — with zero fluid mixing or contamination risk." },
-    { n: "03", t: "FarmBox Hydroponic Module", d: "NFT or DWC growing channels maintain 18–22°C root-zone temperature. Leafy greens, herbs, and microgreens thrive in a GPS-monitored stable environment, 365 days per year." },
-    { n: "04", t: "Smart Climate Control", d: "IoT sensors and Node-RED automation balance heat distribution, CO₂ supplementation, and lighting — adapting in real-time to both GPU load fluctuations and crop growth demands." },
-  ];
-
   const farmBenefits = [
     "Near-zero heating cost — eliminates the #1 operating expense in cold climates",
     "365-day crop production regardless of external temperature or season",
@@ -161,27 +154,6 @@ const FarmBoxAI = () => {
                 <text x="150" y="268" textAnchor="middle" fontSize="8" fill="hsl(var(--muted-foreground))">Net-zero heating · Carbon credits</text>
               </svg>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* HOW IT WORKS */}
-      <section id="how" className="py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700 max-w-2xl">
-            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-accent mb-4">Technical Integration</p>
-            <h2 className="font-serif text-3xl lg:text-5xl font-normal leading-[1.15] mb-5">How the system works</h2>
-            <p className="text-base text-muted-foreground leading-relaxed">Four integrated layers close the heat-to-harvest loop at any modular scale.</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-            {steps.map((s, i) => (
-              <div key={s.n} className="reveal opacity-0 translate-y-6 transition-all duration-700 bg-card border border-border rounded-xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-accent transition-all" style={{ transitionDelay: `${i * 80}ms` }}>
-                <span className="font-serif text-4xl text-accent/30 block mb-4 leading-none">{s.n}</span>
-                <h3 className="font-serif text-xl mb-3 leading-snug">{s.t}</h3>
-                <p className="text-sm text-muted-foreground leading-[1.75]">{s.d}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
