@@ -71,9 +71,12 @@ const FarmBoxAI = () => {
             Intelligence and <em className="italic text-accent">food sovereignty</em>,<br />
             growing together
           </h1>
-          <p className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-200 text-lg md:text-xl text-muted-foreground font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            FarmBox's modular hydroponic system captures waste heat from containerised AI data centres — eliminating heating costs and creating a truly symbiotic food &amp; compute ecosystem.
-          </p>
+          <div className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-200 text-base md:text-lg text-muted-foreground font-light max-w-3xl mx-auto mb-8 leading-relaxed text-left md:text-center space-y-4">
+            <p>FarmBox is a modular farm that adapts to climate, crop, any community.</p>
+            <p>In cold regions, FarmBox pairs the growing space with a containerised AI data center — using the server waste heat that would otherwise be lost to the atmosphere as the greenhouse's primary heat source. Free, continuous, and available around the clock.</p>
+            <p>The data center runs cooler. The farm runs warmer. Energy bills shrink on both sides.</p>
+            <p>Beyond the energy equation, the same computing power that drives AI workloads monitors plant health, optimises nutrients, and predicts harvests in real time.</p>
+          </div>
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-300 flex gap-4 justify-center flex-wrap mb-16">
             <a href="#concept" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-full text-sm font-semibold tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
               Explore the Concept
