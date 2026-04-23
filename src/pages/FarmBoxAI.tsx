@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { Brain, Cpu, Droplets, Sun, LineChart, ShieldCheck, Sparkles, Workflow } from "lucide-react";
+import { Brain, Cpu, Droplets, Sun, LineChart, ShieldCheck, Sparkles, Workflow, Flame, Leaf, Zap, ArrowRight, CheckCircle2, Server, Thermometer } from "lucide-react";
 
 const FarmBoxAI = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
