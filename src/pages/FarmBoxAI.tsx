@@ -68,8 +68,8 @@ const FarmBoxAI = () => {
 
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 font-serif text-4xl md:text-6xl lg:text-7xl font-normal leading-[1.1] mb-6">
-            Where <em className="italic text-accent">AI Heat</em><br />
-            Grows Tomorrow's Food
+            Intelligence and <em className="italic text-accent">food sovereignty</em>,<br />
+            growing together
           </h1>
           <p className="reveal opacity-0 translate-y-6 transition-all duration-700 delay-200 text-lg md:text-xl text-muted-foreground font-light max-w-2xl mx-auto mb-8 leading-relaxed">
             FarmBox's modular hydroponic system captures waste heat from containerised AI data centres — eliminating heating costs and creating a truly symbiotic food &amp; compute ecosystem.
