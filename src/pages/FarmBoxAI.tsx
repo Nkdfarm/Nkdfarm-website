@@ -165,27 +165,6 @@ const FarmBoxAI = () => {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section id="how" className="py-20 lg:py-28">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700 max-w-2xl">
-            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-accent mb-4">Technical Integration</p>
-            <h2 className="font-serif text-3xl lg:text-5xl font-normal leading-[1.15] mb-5">How the system works</h2>
-            <p className="text-base text-muted-foreground leading-relaxed">Four integrated layers close the heat-to-harvest loop at any modular scale.</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-            {steps.map((s, i) => (
-              <div key={s.n} className="reveal opacity-0 translate-y-6 transition-all duration-700 bg-card border border-border rounded-xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 hover:border-accent transition-all" style={{ transitionDelay: `${i * 80}ms` }}>
-                <span className="font-serif text-4xl text-accent/30 block mb-4 leading-none">{s.n}</span>
-                <h3 className="font-serif text-xl mb-3 leading-snug">{s.t}</h3>
-                <p className="text-sm text-muted-foreground leading-[1.75]">{s.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WIN-WIN */}
       <section id="benefits" className="bg-card py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-6">
