@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
+import PillarsSection from "@/components/PillarsSection";
+import CTASection from "@/components/CTASection";
 import { articles } from "@/data/articles";
 
 const Index = () => {
@@ -18,10 +20,20 @@ const Index = () => {
         {/* Intro Section */}
         <IntroSection />
 
+        {/* Pillars */}
+        <PillarsSection />
+
         {/* Featured Articles Grid */}
         <section id="articles" className="py-12">
-          <div className="flex items-center justify-between mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Articles</h2>
+          <div className="flex items-end justify-between mb-10 md:mb-12 animate-slide-up">
+            <div className="space-y-2">
+              <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-[hsl(var(--brand-accent))]">
+                Field Notes
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Featured <em className="italic font-light text-[hsl(var(--brand-accent))]">articles</em>
+              </h2>
+            </div>
             <a href="#all" className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors px-4 py-2 rounded-full hover:bg-muted/60">
               View all →
             </a>
@@ -35,6 +47,9 @@ const Index = () => {
             )}
           </div>
         </section>
+
+        {/* CTA Section */}
+        <CTASection />
 
         {/* Newsletter Section */}
         
