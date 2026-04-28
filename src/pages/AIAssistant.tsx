@@ -1,4 +1,5 @@
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
 import Header from "@/components/Header";
 import { useAuth } from "@/hooks/useAuth";
 import { useChatMessages } from "@/hooks/useChatMessages";
@@ -77,7 +78,15 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
           <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-4 py-5 sm:px-6">
           {messages.length === 0 && !isWaiting ? <div className="flex flex-1 items-center justify-center text-center text-muted-foreground">Ask anything about your Notion workspace</div> : messages.map((message) => (
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-              <div className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${message.role === "user" ? "bg-primary text-primary-foreground" : "border border-border bg-muted text-foreground"}`}>{message.content}</div>
+              <div className={`max-w-[82%] overflow-hidden break-words rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${message.role === "user" ? "bg-primary text-primary-foreground" : "border border-border bg-muted text-foreground"}`}>
+                {message.role === "assistant" ? (
+                  <ReactMarkdown className="prose prose-sm max-w-none overflow-hidden break-words prose-p:my-0 prose-pre:overflow-x-auto prose-pre:whitespace-pre-wrap prose-code:break-words">
+                    {message.content}
+                  </ReactMarkdown>
+                ) : (
+                  message.content
+                )}
+              </div>
             </div>
           ))}
           {isWaiting && <TypingIndicator />}
