@@ -3,6 +3,7 @@ import { useState } from "react";
 const VALID_USERNAME = "notion";
 const VALID_PASSWORD = "barlands";
 const AUTH_COOKIE_NAME = "notion_ai_authenticated";
+const AUTH_SESSION_KEY = "notion_ai_authenticated";
 
 const hasAuthCookie = () =>
   document.cookie
@@ -10,13 +11,18 @@ const hasAuthCookie = () =>
     .map((cookie) => cookie.trim())
     .some((cookie) => cookie === `${AUTH_COOKIE_NAME}=true`);
 
+const hasSessionAuth = () => sessionStorage.getItem(AUTH_SESSION_KEY) === "true";
+
+const isAuthenticatedForSession = () => hasAuthCookie() || hasSessionAuth();
+
 export function useAuth() {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => hasAuthCookie());
+  const [isAuthenticated, setIsAuthenticated] = useState(() => isAuthenticatedForSession());
   const [error, setError] = useState(false);
 
   const signIn = (username: string, password: string) => {
     if (username === VALID_USERNAME && password === VALID_PASSWORD) {
       document.cookie = `${AUTH_COOKIE_NAME}=true; path=/; SameSite=Lax`;
+      sessionStorage.setItem(AUTH_SESSION_KEY, "true");
       setIsAuthenticated(true);
       setError(false);
       return true;
@@ -28,6 +34,7 @@ export function useAuth() {
 
   const signOut = () => {
     document.cookie = `${AUTH_COOKIE_NAME}=; path=/; max-age=0; SameSite=Lax`;
+    sessionStorage.removeItem(AUTH_SESSION_KEY);
     setIsAuthenticated(false);
     setError(false);
   };
