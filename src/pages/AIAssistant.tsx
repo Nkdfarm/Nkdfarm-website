@@ -4,8 +4,6 @@ import Header from "@/components/Header";
 import { useAuth } from "@/hooks/useAuth";
 import { useChatMessages } from "@/hooks/useChatMessages";
 
-const Markdown = ReactMarkdown as unknown as React.ComponentType<{ className?: string; children: string }>;
-
 const LoginScreen = ({ error, onSignIn }: { error: boolean; onSignIn: (username: string, password: string) => boolean }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -82,9 +80,9 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
               <div className={`max-w-[82%] overflow-hidden break-words rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${message.role === "user" ? "bg-primary text-primary-foreground" : "border border-border bg-muted text-foreground"}`}>
                 {message.role === "assistant" ? (
-                  <Markdown className="prose prose-sm max-w-none overflow-hidden break-words prose-p:my-0 prose-pre:overflow-x-auto prose-pre:whitespace-pre-wrap prose-code:break-words">
-                    {message.content}
-                  </Markdown>
+                  <div className="prose prose-sm max-w-none overflow-hidden break-words prose-p:my-0 prose-pre:overflow-x-auto prose-pre:whitespace-pre-wrap prose-code:break-words">
+                    <ReactMarkdown>{message.content}</ReactMarkdown>
+                  </div>
                 ) : (
                   message.content
                 )}
