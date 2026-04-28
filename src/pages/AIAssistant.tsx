@@ -94,7 +94,7 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
           </div>
           <div className="border-t border-border/70 bg-background/60 px-4 py-4 backdrop-blur sm:px-6">
         <div className="flex flex-col gap-3 sm:flex-row">
-          <input value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={handleKeyDown} disabled={isWaiting} placeholder="Message Notion AI Assistant" className="h-12 min-w-0 flex-1 rounded-xl border border-input bg-card px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10 disabled:cursor-not-allowed disabled:opacity-60" />
+          <input value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={handleKeyDown} disabled={isWaiting} placeholder="Message Notion AI Assistant" className="h-12 min-w-0 flex-1 rounded-xl border border-input bg-card px-4 text-base font-medium outline-none transition placeholder:text-muted-foreground sm:text-sm sm:font-normal focus:border-ring focus:ring-2 focus:ring-ring/10 disabled:cursor-not-allowed disabled:opacity-60" />
           <div className="flex gap-3">
             <button onClick={submitMessage} disabled={isWaiting || !draft.trim()} className="h-12 flex-1 rounded-xl bg-primary px-5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:flex-none">Send</button>
             <button onClick={eraseConversation} disabled={isWaiting || messages.length === 0} className="h-12 flex-1 rounded-xl border border-border bg-card px-4 text-sm font-medium text-foreground transition hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 sm:flex-none">Erase conversation</button>
