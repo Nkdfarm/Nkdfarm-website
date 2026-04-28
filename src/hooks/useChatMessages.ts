@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const CHAT_SESSION_KEY = "notion_ai_chat_messages";
 
@@ -23,7 +24,7 @@ export function useChatMessages() {
     });
   };
 
-  const sendMessage = (content: string) => {
+  const sendMessage = async (content: string) => {
     const trimmed = content.trim();
     if (!trimmed || isWaiting) return;
 
@@ -36,17 +37,34 @@ export function useChatMessages() {
     updateMessages((current) => [...current, userMessage]);
     setIsWaiting(true);
 
-    window.setTimeout(() => {
+    try {
+      const { data, error } = await supabase.functions.invoke("ask-notion", {
+        body: { question: trimmed },
+      });
+
+      if (error) throw error;
+
       updateMessages((current) => [
         ...current,
         {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: "I'm thinking...",
+          content: data?.answer || "I don't have that information.",
         },
       ]);
+    } catch (error) {
+      console.error("Failed to ask Notion assistant", error);
+      updateMessages((current) => [
+        ...current,
+        {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          content: "Sorry, something went wrong. Please try again.",
+        },
+      ]);
+    } finally {
       setIsWaiting(false);
-    }, 1500);
+    }
   };
 
   const eraseConversation = () => {
