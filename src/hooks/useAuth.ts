@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const VALID_USERNAME = "notion";
 const VALID_PASSWORD = "barlands";
@@ -13,10 +13,6 @@ const hasAuthCookie = () =>
 export function useAuth() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => hasAuthCookie());
   const [error, setError] = useState(false);
-
-  useEffect(() => {
-    setIsAuthenticated(hasAuthCookie());
-  }, []);
 
   const signIn = (username: string, password: string) => {
     if (username === VALID_USERNAME && password === VALID_PASSWORD) {
