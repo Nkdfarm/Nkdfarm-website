@@ -46,7 +46,7 @@ const TypingIndicator = () => (
 const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
   const [draft, setDraft] = useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
-  const { messages, isWaiting, sendMessage } = useChatMessages();
+  const { messages, isWaiting, sendMessage, eraseConversation } = useChatMessages();
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -84,9 +84,12 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
           <div ref={bottomRef} />
           </div>
           <div className="border-t border-border/70 bg-background/60 px-4 py-4 backdrop-blur sm:px-6">
-        <div className="flex gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row">
           <input value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={handleKeyDown} disabled={isWaiting} placeholder="Message Notion AI Assistant" className="h-12 min-w-0 flex-1 rounded-xl border border-input bg-card px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10 disabled:cursor-not-allowed disabled:opacity-60" />
-          <button onClick={submitMessage} disabled={isWaiting || !draft.trim()} className="h-12 rounded-xl bg-primary px-5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50">Send</button>
+          <div className="flex gap-3">
+            <button onClick={submitMessage} disabled={isWaiting || !draft.trim()} className="h-12 flex-1 rounded-xl bg-primary px-5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:flex-none">Send</button>
+            <button onClick={eraseConversation} disabled={isWaiting || messages.length === 0} className="h-12 flex-1 rounded-xl border border-border bg-card px-4 text-sm font-medium text-foreground transition hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 sm:flex-none">Erase conversation</button>
+          </div>
         </div>
           </div>
         </section>
