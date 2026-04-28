@@ -1,4 +1,5 @@
 import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+import Header from "@/components/Header";
 import { useAuth } from "@/hooks/useAuth";
 import { useChatMessages } from "@/hooks/useChatMessages";
 
@@ -13,9 +14,11 @@ const LoginScreen = ({ error, onSignIn }: { error: boolean; onSignIn: (username:
   };
 
   return (
-    <main className="min-h-screen bg-background px-4 py-8 font-sans text-foreground flex items-center justify-center">
-      <form onSubmit={handleSubmit} className="w-full max-w-sm rounded-2xl bg-card p-8 shadow-[0_24px_70px_hsl(var(--shadow-soft)/0.14)]">
-        <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-primary text-2xl font-bold text-primary-foreground">
+    <div className="min-h-screen bg-background font-sans text-foreground">
+      <Header />
+      <main className="px-4 pb-10 pt-8 sm:pt-14">
+        <form onSubmit={handleSubmit} className="mx-auto w-full max-w-sm rounded-[2rem] border border-border/70 bg-[hsl(var(--surface-elevated))] p-8 shadow-[0_24px_70px_hsl(var(--shadow-soft)/0.14)]">
+        <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-[hsl(var(--brand-accent))] text-2xl font-bold text-accent-foreground">
           N
         </div>
         <div className="mb-8 text-center">
@@ -28,8 +31,9 @@ const LoginScreen = ({ error, onSignIn }: { error: boolean; onSignIn: (username:
           <button type="submit" className="h-12 w-full rounded-xl bg-primary text-sm font-medium text-primary-foreground transition hover:bg-primary/90">Sign in</button>
           {error && <p className="text-center text-sm font-medium text-destructive">Invalid credentials</p>}
         </div>
-      </form>
-    </main>
+        </form>
+      </main>
+    </div>
   );
 };
 
@@ -59,15 +63,18 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col bg-background font-sans text-foreground">
-      <nav className="sticky top-0 z-10 border-b border-border bg-background/95 px-4 py-4 backdrop-blur">
-        <div className="mx-auto flex max-w-4xl items-center justify-between">
-          <span className="text-base font-semibold">Notion AI Assistant</span>
-          <button onClick={onSignOut} className="text-sm text-muted-foreground transition hover:text-foreground">Sign out</button>
-        </div>
-      </nav>
-      <section className="mx-auto flex w-full max-w-4xl flex-1 flex-col px-4 py-6">
-        <div className="flex flex-1 flex-col gap-4 pb-28">
+    <div className="min-h-screen bg-background font-sans text-foreground">
+      <Header />
+      <main className="px-3 pb-8 pt-4 sm:px-6 sm:pt-8">
+        <section className="mx-auto flex h-[calc(100vh-8rem)] min-h-[560px] w-full max-w-4xl flex-col overflow-hidden rounded-[2rem] border border-border/70 bg-[hsl(var(--surface-elevated))] shadow-[0_24px_70px_hsl(var(--shadow-soft)/0.14)]">
+          <div className="flex items-center justify-between border-b border-border/70 px-5 py-4 sm:px-6">
+            <div>
+              <h1 className="font-sans text-base font-semibold tracking-normal">Notion AI Assistant</h1>
+              <p className="text-xs text-muted-foreground">Workspace chat</p>
+            </div>
+            <button onClick={onSignOut} className="text-sm text-muted-foreground transition hover:text-foreground">Sign out</button>
+          </div>
+          <div className="flex flex-1 flex-col gap-4 overflow-y-auto px-4 py-5 sm:px-6">
           {messages.length === 0 && !isWaiting ? <div className="flex flex-1 items-center justify-center text-center text-muted-foreground">Ask anything about your Notion workspace</div> : messages.map((message) => (
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
               <div className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${message.role === "user" ? "bg-primary text-primary-foreground" : "border border-border bg-muted text-foreground"}`}>{message.content}</div>
@@ -75,15 +82,16 @@ const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
           ))}
           {isWaiting && <TypingIndicator />}
           <div ref={bottomRef} />
-        </div>
-      </section>
-      <div className="sticky bottom-0 border-t border-border bg-background/95 px-4 py-4 backdrop-blur">
-        <div className="mx-auto flex max-w-4xl gap-3">
+          </div>
+          <div className="border-t border-border/70 bg-background/60 px-4 py-4 backdrop-blur sm:px-6">
+        <div className="flex gap-3">
           <input value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={handleKeyDown} disabled={isWaiting} placeholder="Message Notion AI Assistant" className="h-12 min-w-0 flex-1 rounded-xl border border-input bg-card px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10 disabled:cursor-not-allowed disabled:opacity-60" />
           <button onClick={submitMessage} disabled={isWaiting || !draft.trim()} className="h-12 rounded-xl bg-primary px-5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50">Send</button>
         </div>
-      </div>
-    </main>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 };
 
