@@ -3,7 +3,7 @@ import { corsHeaders } from "npm:@supabase/supabase-js/cors";
 const NOTION_API_VERSION = "2022-06-28";
 const NOTION_API_BASE = "https://api.notion.com/v1";
 const ANTHROPIC_API_BASE = "https://api.anthropic.com/v1/messages";
-const MAX_NOTION_DEPTH = 3;
+const MAX_NOTION_DEPTH = 10;
 const MAX_CONTEXT_CHARS = 120_000;
 
 const jsonResponse = (body: Record<string, unknown>, status = 200) =>
