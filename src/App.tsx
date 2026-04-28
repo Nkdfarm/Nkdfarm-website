@@ -1,51 +1,140 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Article from "./pages/Article";
-import Wellness from "./pages/Wellness";
-import Creativity from "./pages/Creativity";
-import About from "./pages/About";
+import { FormEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+import { useAuth } from "@/hooks/useAuth";
+import { useChatMessages } from "@/hooks/useChatMessages";
 
-import Contact from "./pages/Contact";
-import StyleGuide from "./pages/StyleGuide";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import FarmBox from "./pages/FarmBox";
-import FarmBoxAI from "./pages/FarmBoxAI";
-import FarmSimPage from "./pages/FarmSim";
-import NotFound from "./pages/NotFound";
+const LoginScreen = ({ error, onSignIn }: { error: boolean; onSignIn: (username: string, password: string) => boolean }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-const queryClient = new QueryClient();
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const didSignIn = onSignIn(username, password);
+    if (!didSignIn) setPassword("");
+  };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/article/:id" element={<Article />} />
-          <Route path="/farmbox" element={<FarmBox />} />
-          <Route path="/farmbox-ai" element={<FarmBoxAI />} />
-          <Route path="/farmsim" element={<FarmSimPage />} />
-          <Route path="/wellness" element={<Wellness />} />
-          <Route path="/creativity" element={<Creativity />} />
-          <Route path="/about" element={<About />} />
-          
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/style-guide" element={<StyleGuide />} />
-          <Route path="/privacy" element={<Privacy />} />
-          
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  return (
+    <main className="min-h-screen bg-background px-4 py-8 font-sans text-foreground flex items-center justify-center">
+      <form onSubmit={handleSubmit} className="w-full max-w-sm rounded-2xl bg-card p-8 shadow-[0_24px_70px_hsl(var(--shadow-soft)/0.14)]">
+        <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-primary text-2xl font-bold text-primary-foreground">
+          N
+        </div>
+        <div className="mb-8 text-center">
+          <h1 className="font-sans text-2xl font-semibold tracking-normal">Notion AI Assistant</h1>
+          <p className="mt-2 text-sm text-muted-foreground">Sign in to continue</p>
+        </div>
+        <div className="space-y-3">
+          <input
+            value={username}
+            onChange={(event) => setUsername(event.target.value)}
+            placeholder="Username"
+            className="h-12 w-full rounded-xl border border-input bg-background px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10"
+          />
+          <input
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            placeholder="Password"
+            type="password"
+            className="h-12 w-full rounded-xl border border-input bg-background px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10"
+          />
+          <button type="submit" className="h-12 w-full rounded-xl bg-primary text-sm font-medium text-primary-foreground transition hover:bg-primary/90">
+            Sign in
+          </button>
+          {error && <p className="text-center text-sm font-medium text-destructive">Invalid credentials</p>}
+        </div>
+      </form>
+    </main>
+  );
+};
+
+const TypingIndicator = () => (
+  <div className="flex w-fit items-center gap-1 rounded-2xl border border-border bg-muted px-4 py-3">
+    {[0, 1, 2].map((dot) => (
+      <span key={dot} className="h-2 w-2 animate-bounce rounded-full bg-muted-foreground" style={{ animationDelay: `${dot * 120}ms` }} />
+    ))}
+  </div>
 );
+
+const ChatInterface = ({ onSignOut }: { onSignOut: () => void }) => {
+  const [draft, setDraft] = useState("");
+  const bottomRef = useRef<HTMLDivElement>(null);
+  const { messages, isWaiting, sendMessage } = useChatMessages();
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages, isWaiting]);
+
+  const submitMessage = () => {
+    if (!draft.trim() || isWaiting) return;
+    sendMessage(draft);
+    setDraft("");
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") submitMessage();
+  };
+
+  return (
+    <main className="flex min-h-screen flex-col bg-background font-sans text-foreground">
+      <nav className="sticky top-0 z-10 border-b border-border bg-background/95 px-4 py-4 backdrop-blur">
+        <div className="mx-auto flex max-w-4xl items-center justify-between">
+          <span className="text-base font-semibold">Notion AI Assistant</span>
+          <button onClick={onSignOut} className="text-sm text-muted-foreground transition hover:text-foreground">
+            Sign out
+          </button>
+        </div>
+      </nav>
+
+      <section className="mx-auto flex w-full max-w-4xl flex-1 flex-col px-4 py-6">
+        <div className="flex flex-1 flex-col gap-4 pb-28">
+          {messages.length === 0 && !isWaiting ? (
+            <div className="flex flex-1 items-center justify-center text-center text-muted-foreground">Ask anything about your Notion workspace</div>
+          ) : (
+            messages.map((message) => (
+              <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
+                <div
+                  className={`max-w-[82%] rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[70%] ${
+                    message.role === "user" ? "bg-primary text-primary-foreground" : "border border-border bg-muted text-foreground"
+                  }`}
+                >
+                  {message.content}
+                </div>
+              </div>
+            ))
+          )}
+          {isWaiting && <TypingIndicator />}
+          <div ref={bottomRef} />
+        </div>
+      </section>
+
+      <div className="sticky bottom-0 border-t border-border bg-background/95 px-4 py-4 backdrop-blur">
+        <div className="mx-auto flex max-w-4xl gap-3">
+          <input
+            value={draft}
+            onChange={(event) => setDraft(event.target.value)}
+            onKeyDown={handleKeyDown}
+            disabled={isWaiting}
+            placeholder="Message Notion AI Assistant"
+            className="h-12 min-w-0 flex-1 rounded-xl border border-input bg-card px-4 text-sm outline-none transition focus:border-ring focus:ring-2 focus:ring-ring/10 disabled:cursor-not-allowed disabled:opacity-60"
+          />
+          <button
+            onClick={submitMessage}
+            disabled={isWaiting || !draft.trim()}
+            className="h-12 rounded-xl bg-primary px-5 text-sm font-medium text-primary-foreground transition hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+const App = () => {
+  const { isAuthenticated, error, signIn, signOut } = useAuth();
+
+  if (!isAuthenticated) return <LoginScreen error={error} onSignIn={signIn} />;
+
+  return <ChatInterface onSignOut={signOut} />;
+};
 
 export default App;
