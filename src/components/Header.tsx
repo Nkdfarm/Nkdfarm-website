@@ -61,6 +61,9 @@ const Header = () => {
             <a href="/farmsim" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               FarmSim
             </a>
+            <a href="/ai-assistant" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+              AI Assistant
+            </a>
             <a href="/about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               About
             </a>
@@ -112,6 +115,9 @@ const Header = () => {
               </a>
               <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
                 FarmSim
+              </a>
+              <a href="/ai-assistant" className="text-sm font-medium hover:text-accent transition-colors">
+                AI Assistant
               </a>
               <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
                 About
