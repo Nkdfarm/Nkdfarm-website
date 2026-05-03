@@ -49,6 +49,32 @@ const FarmBoxAI = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
+      {/* SUB TOP BAR */}
+      <div className="sticky top-[72px] z-40 border-y border-border bg-background/85 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-4 h-12 overflow-x-auto">
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <Leaf className="w-4 h-4 text-accent" />
+              <span className="text-sm font-semibold tracking-wide">FarmBox AI</span>
+              <span className="hidden sm:inline text-xs text-muted-foreground">· Hybrid Farm × AI Data Center</span>
+            </div>
+            <nav className="flex items-center gap-1 flex-shrink-0">
+              {[
+                { href: "#concept", label: "Concept" },
+                { href: "#benefits", label: "Benefits" },
+                { href: "#metrics", label: "Metrics" },
+                { href: "#hydracore", label: "Hydracore" },
+                { href: "#contact", label: "Contact" },
+              ].map((item) => (
+                <a key={item.href} href={item.href} className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-accent rounded-full px-3 py-1.5 transition-colors whitespace-nowrap">
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
+
       {/* HERO */}
       <section className="relative overflow-hidden min-h-[90vh] flex items-center justify-center px-6 py-20 lg:py-28 text-center">
         <div className="absolute inset-0 z-0" style={{
