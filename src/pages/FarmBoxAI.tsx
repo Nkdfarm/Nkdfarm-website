@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "@/components/Header";
-import { Leaf, Zap, ArrowRight, CheckCircle2, Camera, Cpu, Workflow, BarChart3, Smartphone, Sprout, Bug, HardHat, Lock, DoorOpen, Thermometer } from "lucide-react";
+import { Camera, Cpu, Workflow, BarChart3, Smartphone, Sprout, Bug, HardHat, Lock, DoorOpen, Thermometer } from "lucide-react";
 
 const FarmBoxAI = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -20,30 +20,6 @@ const FarmBoxAI = () => {
     document.querySelectorAll(".reveal").forEach((el) => observerRef.current?.observe(el));
     return () => observerRef.current?.disconnect();
   }, []);
-
-  const farmBenefits = [
-    "Near-zero heating cost — eliminates the #1 operating expense in cold climates",
-    "365-day crop production regardless of external temperature or season",
-    "Highly competitive produce pricing vs. conventionally heated greenhouses",
-    "Carbon-neutral food production — strong ESG and retail sustainability story",
-    "Food sovereignty — fresh produce grown where populations actually live",
-  ];
-
-  const dcBenefits = [
-    "Reduced cooling OPEX — waste heat leaves the system productively",
-    "Improved PUE scores — measurable regulatory and ESG compliance benefit",
-    "CSR credibility: tangible community food programme attached to compute",
-    "Planning advantage with UK councils prioritising sustainable infrastructure",
-    "Revenue share or land-use offset from hydroponic co-tenant",
-  ];
-
-  const metrics = [
-    { l: "CapEx Range", v: "£2–4M", d: "GPU container + FarmBox modules + heat exchanger infrastructure" },
-    { l: "Heating Cost Saving", v: "£150–300K/yr", d: "Annual gas heating cost eliminated at UK commercial rates" },
-    { l: "Payback Period", v: "4–7 yrs", d: "Hydroponic side alone; accelerated with AI compute revenue" },
-    { l: "Min GPU Load", v: ">60%", d: "Minimum utilisation for sufficient heat; backup heat pump bridges any gap" },
-  ];
-
 
   return (
     <div className="min-h-screen bg-background">
