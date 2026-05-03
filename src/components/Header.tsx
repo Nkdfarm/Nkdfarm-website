@@ -114,6 +114,9 @@ const Header = () => {
                 FarmBox
               </a>
               <a href="/farmbox-ai" className="text-sm font-medium hover:text-accent transition-colors">
+                FarmBox AI
+              </a>
+              <a href="/farmbox-ai" className="text-sm font-medium hover:text-accent transition-colors">
                 FarmBox modules
               </a>
               <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
