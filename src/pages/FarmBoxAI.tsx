@@ -38,7 +38,7 @@ const FarmBoxAI = () => {
   ];
 
   const metrics = [
-    { l: "CapEx Range", v: "£2–4M", d: "GPU container + FarmBox modules + heat exchanger infrastructure" },
+    { l: "CapEx Range", v: "£2–4M", d: "GPU container + hydroponic build-out + heat exchanger infrastructure" },
     { l: "Heating Cost Saving", v: "£150–300K/yr", d: "Annual gas heating cost eliminated at UK commercial rates" },
     { l: "Payback Period", v: "4–7 yrs", d: "Hydroponic side alone; accelerated with AI compute revenue" },
     { l: "Min GPU Load", v: ">60%", d: "Minimum utilisation for sufficient heat; backup heat pump bridges any gap" },
@@ -154,7 +154,7 @@ const FarmBoxAI = () => {
                 {/* FarmBox Box */}
                 <rect x="170" y="30" width="120" height="65" rx="10" fill="hsl(var(--muted))" stroke="hsl(var(--primary))" strokeWidth="1.5" />
                 <text x="230" y="55" textAnchor="middle" fontSize="9.5" fontWeight="600" fill="hsl(var(--primary))" letterSpacing="0.07em">FARMBOX</text>
-                <text x="230" y="70" textAnchor="middle" fontSize="8.5" fill="hsl(var(--muted-foreground))">Hydroponic Module</text>
+                <text x="230" y="70" textAnchor="middle" fontSize="8.5" fill="hsl(var(--muted-foreground))">Hydroponic Grow Unit</text>
                 <text x="230" y="83" textAnchor="middle" fontSize="8.5" fill="hsl(var(--muted-foreground))">18–26°C grow zone</text>
                 {/* Arrows */}
                 <path d="M130 52 L170 52" stroke="hsl(var(--accent))" strokeWidth="1.8" strokeDasharray="4 2.5" markerEnd="url(#ao)" />
