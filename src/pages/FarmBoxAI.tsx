@@ -159,34 +159,6 @@ const FarmBoxAI = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section id="contact" className="text-center py-24 lg:py-28 relative overflow-hidden">
-
-        <div className="absolute inset-0 z-0" style={{
-          background: "radial-gradient(ellipse 70% 80% at 50% 100%, hsl(var(--accent) / 0.10), transparent 70%)"
-        }} />
-        <div className="relative z-10 max-w-3xl mx-auto px-6">
-          <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-            <p className="text-xs font-semibold tracking-[0.12em] uppercase text-accent mb-4">Join the Symbiosis</p>
-            <h2 className="font-serif text-3xl lg:text-5xl font-normal leading-[1.15] mb-4">
-              Ready to turn GPU heat into<br />
-              <em className="italic text-accent">food sovereignty?</em>
-            </h2>
-            <p className="text-lg text-muted-foreground font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-              Whether you operate a data centre, manage a hydroponic farm, or represent a local authority seeking sustainable food infrastructure — let's build the loop together.
-            </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <a href="mailto:contact@farmbox.io" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 rounded-full text-sm font-semibold tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all inline-flex items-center gap-2">
-                Get in Touch <ArrowRight className="w-4 h-4" />
-              </a>
-              <a href="#concept" className="border border-border text-muted-foreground hover:border-accent hover:text-accent px-8 py-4 rounded-full text-sm font-medium transition-all">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <footer className="border-t border-border py-8 px-6 max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4 text-xs text-muted-foreground">
         <span>© 2026 FarmBox · AI-Integrated Hydroponic Systems</span>
         <span>Modular · Sustainable · Cold-Climate Ready</span>
