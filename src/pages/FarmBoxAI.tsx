@@ -405,7 +405,7 @@ const FarmBoxAI = () => {
         <div className="max-w-5xl mx-auto px-6">
           {/* topbar */}
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700 flex items-center justify-between mb-12 font-mono text-[10px] tracking-[0.2em] uppercase">
-            <span className="text-accent">// FarmBox AI · Vision system</span>
+            <span className="text-accent">// FarmVision · Vision system</span>
             <span className="text-muted-foreground">2026 · NF</span>
           </div>
 
@@ -505,7 +505,7 @@ const FarmBoxAI = () => {
 
           <div className="reveal opacity-0 translate-y-6 transition-all duration-700 border-t border-accent/60 pt-5 flex justify-between items-center flex-wrap gap-3 font-mono text-[9px] text-muted-foreground/70">
             <p>Jetson Orin Nano Super · Ubuntu · Frigate · YOLOv8<br />n8n · ERPNext · Grafana · Tailscale</p>
-            <p className="text-right">FarmBox AI · 2026 <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent ml-2 align-middle" /></p>
+            <p className="text-right">FarmVision · 2026 <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent ml-2 align-middle" /></p>
           </div>
         </div>
       </section>
