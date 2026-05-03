@@ -55,8 +55,7 @@ const FarmBoxAI = () => {
           <div className="flex items-center justify-between gap-4 h-12 overflow-x-auto">
             <div className="flex items-center gap-2 flex-shrink-0">
               <Leaf className="w-4 h-4 text-accent" />
-              <span className="text-sm font-semibold tracking-wide">FarmBox AI</span>
-              <span className="hidden sm:inline text-xs text-muted-foreground">· Hybrid Farm × AI Data Center</span>
+              <span className="hidden sm:inline text-xs text-muted-foreground">Hybrid Farm × AI Data Center</span>
             </div>
             <nav className="flex items-center gap-1 flex-shrink-0">
               {[
