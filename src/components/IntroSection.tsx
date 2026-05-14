@@ -24,6 +24,9 @@ const IntroSection = () => {
           <img
             src={housesImage}
             alt="Row of brick townhouses with nkd.farm delivery boxes at each doorstep"
+            loading="lazy"
+            width={1200}
+            height={320}
             className="w-full h-[180px] md:h-[280px] lg:h-[320px] object-cover object-bottom"
           />
         </div>
