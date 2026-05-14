@@ -70,7 +70,7 @@ const HeroSection = () => {
 
               {/* Description */}
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light animate-slide-up stagger-1">
-                Food globe-trotting has no place in this dystopian age. We build the infrastructure
+                Food should be produced closer to where people live. We're building the infrastructure
                 for the cities of tomorrow.
               </p>
 
