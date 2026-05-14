@@ -122,21 +122,6 @@ const FarmVision = () => {
           </div>
         </section>
 
-        {/* Stats */}
-        <section className="grid grid-cols-2 md:grid-cols-4 mb-16">
-          {[
-            { val: "R39k", color: "text-accent", lbl: "complete setup\n12 cams · 4 bays" },
-            { val: "R0", color: "text-accent", lbl: "monthly software\nall open-source" },
-            { val: "×6", color: "text-foreground", lbl: "use cases\none camera type" },
-            { val: "2d", color: "text-foreground", lbl: "to set up\nthen automatic" },
-          ].map((s, i) => (
-            <div key={i} className="p-6 border border-border -ml-px -mt-px text-center">
-              <div className={`font-serif text-5xl font-extrabold tracking-tight leading-none mb-2 ${s.color}`}>{s.val}</div>
-              <div className="font-mono text-xs text-muted-foreground leading-relaxed whitespace-pre-line">{s.lbl}</div>
-            </div>
-          ))}
-        </section>
-
         {/* Footer */}
         <footer className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-t-2 border-accent pt-6">
           <p className="font-mono text-xs text-muted-foreground leading-relaxed">
