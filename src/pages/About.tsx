@@ -59,7 +59,7 @@ const boardMembers = [
     role: "Legal Counsel",
     bio: "Seasoned international lawyer with extensive commercial experience.",
     image: "/lovable-uploads/jason-karas.jpeg",
-    flagCode: "au",
+    flagCode: "hk",
   },
 ];
 
