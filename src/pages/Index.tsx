@@ -3,7 +3,7 @@ import ArticleCard from "@/components/ArticleCard";
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import PillarsSection from "@/components/PillarsSection";
-import CTASection from "@/components/CTASection";
+
 import { articles } from "@/data/articles";
 
 const Index = () => {
@@ -48,8 +48,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <CTASection />
 
         {/* Newsletter Section */}
         
