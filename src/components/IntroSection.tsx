@@ -7,7 +7,7 @@ const IntroSection = () => {
     <section className="py-12 md:py-20 px-4 animate-fade-in">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <span className="inline-block text-[10px] font-medium tracking-[0.2em] uppercase text-[hsl(var(--brand-accent))] animate-slide-up">
-          The Naked Farms Model
+          The Naked Farm Model
         </span>
         <h2 className="text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight animate-slide-up stagger-1">
           <span className="text-[hsl(var(--brand-accent))]">Naked</span> Farm pioneers agritech franchising for{" "}
