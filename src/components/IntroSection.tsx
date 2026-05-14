@@ -10,7 +10,7 @@ const IntroSection = () => {
           The Naked Farms Model
         </span>
         <h2 className="text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight animate-slide-up stagger-1">
-          <span className="text-[hsl(var(--brand-accent))]">Naked</span> Farms pioneers agritech franchising for{" "}
+          <span className="text-[hsl(var(--brand-accent))]">Naked</span> Farm pioneers agritech franchising for{" "}
           <em className="italic font-light">city food system revival</em>
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-slide-up stagger-2">
