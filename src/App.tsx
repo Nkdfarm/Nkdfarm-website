@@ -15,7 +15,6 @@ import FarmBox from "./pages/FarmBox";
 import FarmBoxAI from "./pages/FarmBoxAI";
 import FarmBoxModules from "./pages/FarmBoxModules";
 import FarmSimPage from "./pages/FarmSim";
-import AIAssistant from "./pages/AIAssistant";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,7 +32,6 @@ const App = () => (
           <Route path="/farmbox-ai" element={<FarmBoxAI />} />
           <Route path="/farmbox-modules" element={<FarmBoxModules />} />
           <Route path="/farmsim" element={<FarmSimPage />} />
-          <Route path="/ai-assistant" element={<AIAssistant />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/creativity" element={<Creativity />} />
           <Route path="/about" element={<About />} />
