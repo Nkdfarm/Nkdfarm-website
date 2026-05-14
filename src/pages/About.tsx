@@ -56,8 +56,8 @@ const boardMembers = [
   },
   {
     name: "Jason Karas",
-    role: "Chief Legal Officer",
-    bio: "Seasoned legal professional with extensive experience in corporate law, international transactions, and regulatory compliance across multiple jurisdictions.",
+    role: "Legal Counsel",
+    bio: "Seasoned international lawyer with extensive commercial experience.",
     image: "/lovable-uploads/jason-karas.jpeg",
     flagCode: "au",
   },
