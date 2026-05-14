@@ -58,9 +58,6 @@ const Header = () => {
             <a href="/farmbox-ai" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               FarmVision
             </a>
-            <a href="/farmbox-modules" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              FarmHeat
-            </a>
             <a href="/farmsim" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               FarmSim
             </a>
@@ -112,9 +109,6 @@ const Header = () => {
               </a>
               <a href="/farmbox-ai" className="text-sm font-medium hover:text-accent transition-colors">
               FarmVision
-              </a>
-              <a href="/farmbox-modules" className="text-sm font-medium hover:text-accent transition-colors">
-                FarmHeat
               </a>
               <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
                 FarmSim

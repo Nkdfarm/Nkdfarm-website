@@ -13,7 +13,7 @@ import StyleGuide from "./pages/StyleGuide";
 import Privacy from "./pages/Privacy";
 import FarmBox from "./pages/FarmBox";
 import FarmBoxAI from "./pages/FarmBoxAI";
-import FarmBoxModules from "./pages/FarmBoxModules";
+
 import FarmSimPage from "./pages/FarmSim";
 import NotFound from "./pages/NotFound";
 
@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/article/:id" element={<Article />} />
           <Route path="/farmbox" element={<FarmBox />} />
           <Route path="/farmbox-ai" element={<FarmBoxAI />} />
-          <Route path="/farmbox-modules" element={<FarmBoxModules />} />
+          
           <Route path="/farmsim" element={<FarmSimPage />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/creativity" element={<Creativity />} />
