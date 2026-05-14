@@ -49,9 +49,6 @@ const Header = () => {
             <a href="/" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               Home
             </a>
-            <a href="/#articles" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
-              Articles
-            </a>
             <a href="/farmbox" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               FarmBox
             </a>
@@ -60,6 +57,9 @@ const Header = () => {
             </a>
             <a href="/farmbox-ai" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               FarmVision
+            </a>
+            <a href="/#articles" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
+              Articles
             </a>
             <a href="/about" className="text-sm font-medium hover:bg-muted/60 rounded-full px-4 py-2 transition-all">
               About
@@ -101,9 +101,6 @@ const Header = () => {
               <a href="/" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 Home
               </a>
-              <a href="/#articles" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
-                Articles
-              </a>
               <a href="/farmbox" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 FarmBox
               </a>
@@ -112,6 +109,9 @@ const Header = () => {
               </a>
               <a href="/farmbox-ai" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 FarmVision
+              </a>
+              <a href="/#articles" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
+                Articles
               </a>
               <a href="/about" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 About
