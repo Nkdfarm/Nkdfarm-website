@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-microgreens.jpg";
+import housesImage from "@/assets/nkd-farm-houses.png";
 
 const accentLines = [
   "Return to origins",
@@ -13,22 +14,18 @@ const HeroSection = () => {
   return (
     <section className="my-6 md:my-12 animate-fade-in flex items-center justify-center">
       <div className="max-w-6xl w-full bg-muted rounded-[2.5rem] overflow-hidden border border-border/40 shadow-2xl">
-        <div className="flex flex-col lg:flex-row min-h-[640px]">
-          {/* Left: Visual */}
-          <div className="lg:w-1/2 relative min-h-[440px] lg:min-h-full p-6 md:p-10 animate-scale-in">
-            <div className="absolute inset-0">
-              <img
-                src={heroImage}
-                alt="Naked Farms — urban indoor microgreens under teal lighting"
-                width={1024}
-                height={1280}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-muted via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-muted/20" />
-            </div>
+        <div className="flex flex-col">
+          {/* Row 1: Panoramic greenhouse image */}
+          <div className="relative w-full h-[220px] md:h-[300px] lg:h-[340px] overflow-hidden animate-scale-in">
+            <img
+              src={heroImage}
+              alt="Naked Farms — high-tech transparent greenhouse with leafy greens"
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-muted/60 via-transparent to-transparent" />
 
             {/* Live badge */}
-            <div className="relative z-10">
+            <div className="absolute top-6 left-6 z-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/60 backdrop-blur-xl border border-border/40 text-foreground/90 text-[10px] font-bold tracking-widest uppercase">
                 <span className="relative flex h-2 w-2">
                   <span className="absolute inline-flex h-full w-full rounded-full bg-[hsl(var(--brand-accent))] opacity-75 animate-ping" />
@@ -49,11 +46,10 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right: Content */}
-          <div className="lg:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
-            <div className="max-w-md space-y-7 md:space-y-8">
-              {/* Eyebrow */}
-              <div className="flex items-center gap-3 animate-slide-down">
+          {/* Row 2: Centered text content */}
+          <div className="px-6 md:px-12 lg:px-16 py-12 md:py-16 flex flex-col items-center text-center">
+            <div className="max-w-2xl space-y-7 md:space-y-8">
+              <div className="flex items-center justify-center gap-3 animate-slide-down">
                 <div className="w-6 h-6 flex items-center justify-center rounded-full bg-[hsl(var(--brand-accent))]/10 border border-[hsl(var(--brand-accent))]/30">
                   <Sparkles className="w-3 h-3 text-[hsl(var(--brand-accent))]" />
                 </div>
@@ -62,23 +58,20 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              {/* Heading */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-[0.95] tracking-tight animate-slide-down">
                 It is time<br />
                 to <em className="italic font-light text-[hsl(var(--brand-accent))]">change</em>
               </h1>
 
-              {/* Description */}
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light animate-slide-up stagger-1">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light animate-slide-up stagger-1 max-w-xl mx-auto">
                 Food globe-trotting has no place in this dystopian age. We build the infrastructure
                 for the high-density cities of tomorrow.
               </p>
 
-              {/* Manifesto */}
-              <ul className="space-y-3.5 pt-2 animate-slide-up stagger-2">
+              <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3 pt-2 animate-slide-up stagger-2">
                 {accentLines.map((line, i) => (
-                  <li key={i} className="flex items-center gap-4 group">
-                    <span className="h-px w-8 bg-[hsl(var(--brand-accent))] transition-all duration-300 group-hover:w-12" />
+                  <li key={i} className="flex items-center gap-3 group">
+                    <span className="h-px w-6 bg-[hsl(var(--brand-accent))] transition-all duration-300 group-hover:w-10" />
                     <span className="text-foreground/85 text-sm md:text-base font-medium tracking-wide">
                       {line}
                     </span>
@@ -86,7 +79,6 @@ const HeroSection = () => {
                 ))}
               </ul>
 
-              {/* CTA */}
               <div className="pt-4 animate-slide-up stagger-3">
                 <a href="/farmbox" className="inline-block">
                   <Button className="group bg-primary hover:bg-primary/90 text-primary-foreground rounded-full pl-8 pr-6 py-6 text-base font-medium transition-all hover:scale-105 shadow-lg shadow-primary/20">
@@ -96,6 +88,15 @@ const HeroSection = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Row 3: Houses panoramic image */}
+          <div className="relative w-full h-[220px] md:h-[300px] lg:h-[340px] overflow-hidden animate-scale-in">
+            <img
+              src={housesImage}
+              alt="Naked Farms — nkd.farm delivery boxes on a residential street"
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
           </div>
         </div>
       </div>
