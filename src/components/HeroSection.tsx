@@ -71,7 +71,7 @@ const HeroSection = () => {
               {/* Description */}
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light animate-slide-up stagger-1">
                 Food globe-trotting has no place in this dystopian age. We build the infrastructure
-                for the high-density cities of tomorrow.
+                for the cities of tomorrow.
               </p>
 
               {/* Manifesto */}
