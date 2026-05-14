@@ -1,8 +1,5 @@
-const stats = [
-{ value: "95%", label: "Less water vs. field agriculture" },
-{ value: "1,000", label: "Families served per unit" },
-{ value: "84¢", label: "Food dollar retained locally" },
-{ value: "7 yr", label: "Path to full ownership" }];
+import housesImage from "@/assets/nkd-farm-houses.png";
+
 
 
 const IntroSection = () => {
@@ -21,26 +18,14 @@ const IntroSection = () => {
         </p>
       </div>
 
-      {/* Stats strip */}
+      {/* Panoramic image */}
       <div className="max-w-6xl mx-auto mt-12 md:mt-16 animate-slide-up stagger-3">
-        <div className="grid grid-cols-2 md:grid-cols-4 rounded-[2rem] overflow-hidden border border-border bg-card/40 backdrop-blur-sm">
-          {stats.map((s, i) =>
-          <div
-            key={i}
-            className={`p-6 md:p-8 text-center ${
-            i < stats.length - 1 ? "md:border-r" : ""} ${
-            i < 2 ? "border-b md:border-b-0" : ""} ${
-            i === 0 || i === 2 ? "border-r md:border-r" : ""} border-border`
-            }>
-
-              <div className="text-3xl md:text-5xl font-serif font-light tracking-tight text-foreground">
-                {s.value}
-              </div>
-              <div className="text-[10px] md:text-xs tracking-[0.15em] uppercase text-muted-foreground mt-2 leading-snug">
-                {s.label}
-              </div>
-            </div>
-          )}
+        <div className="rounded-[2rem] overflow-hidden border border-border bg-card/40">
+          <img
+            src={housesImage}
+            alt="Row of brick townhouses with nkd.farm delivery boxes at each doorstep"
+            className="w-full h-[180px] md:h-[280px] lg:h-[320px] object-cover object-bottom"
+          />
         </div>
       </div>
     </section>);
