@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 py-2 sm:py-4">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 pill-nav px-4 sm:px-6">
           {/* Logo */}
           <div className="flex items-center min-w-0">
@@ -96,29 +96,31 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen &&
-        <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <nav className="flex flex-col gap-4">
-              <a href="/" className="text-sm font-medium hover:text-accent transition-colors">
+        <div className="md:hidden absolute left-0 right-0 top-full mt-1 mx-3 rounded-2xl border border-border bg-[hsl(var(--surface-elevated))] backdrop-blur-lg shadow-xl animate-fade-in z-50">
+            <nav className="flex flex-col gap-1 p-4">
+              <a href="/" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 Home
               </a>
-              <a href="/#articles" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="/#articles" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 Articles
               </a>
-              <a href="/farmbox" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="/farmbox" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 FarmBox
               </a>
-              <a href="/farmsim" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="/farmsim" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 FarmSim
               </a>
-              <a href="/farmbox-ai" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="/farmbox-ai" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 FarmVision
               </a>
-              <a href="/about" className="text-sm font-medium hover:text-accent transition-colors">
+              <a href="/about" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium hover:bg-muted/60 rounded-xl px-4 py-3 transition-colors">
                 About
               </a>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full">
-                Contact
-              </Button>
+              <div className="pt-2">
+                <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-full" onClick={() => setIsMenuOpen(false)}>
+                  Contact
+                </Button>
+              </div>
             </nav>
           </div>
         }
