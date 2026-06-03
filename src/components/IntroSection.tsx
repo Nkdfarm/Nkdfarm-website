@@ -13,9 +13,6 @@ const IntroSection = () => {
           <span className="text-[hsl(var(--brand-accent))]">Naked</span> Farm pioneers agritech franchising for{" "}
           <em className="italic font-light">city food system revival</em>
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-slide-up stagger-2">
-          Powering a new generation of farmers with technology and services for sustainable food — produced where it's eaten.
-        </p>
       </div>
 
       {/* Panoramic image */}
