@@ -1,4 +1,4 @@
-import { MapPin, Scale, Users, GraduationCap, Wind, Expand } from "lucide-react";
+﻿import { MapPin, Scale, Users, GraduationCap, Wind, Expand } from "lucide-react";
 import climateZonesMap from "@/assets/climate-zones-map.png";
 
 const SectionHeading = ({ children }: {children: React.ReactNode;}) =>
@@ -12,22 +12,22 @@ const advantages = [
   num: 1,
   icon: <MapPin className="w-4 h-4" />,
   label: "Climate",
-  title: "Subtropical zone — a direct analogy for global high-demand food markets",
-  desc: "Philippi sits in South Africa's subtropical climate zone — the same classification as the Mediterranean basin, coastal South America, coastal Australia, and southern China. These are the world's fastest-growing premium fresh food demand markets. A FarmBox system engineered under Philippi's conditions requires minimal adaptation before deployment in any of these regions. One R&D site. Global climate relevance."
+  title: "Subtropical zone â€” a direct analogy for global high-demand food markets",
+  desc: "Philippi sits in South Africa's subtropical climate zone â€” the same classification as the Mediterranean basin, coastal South America, coastal Australia, and southern China. These are the world's fastest-growing premium fresh food demand markets. A FarmBox system engineered under Philippi's conditions requires minimal adaptation before deployment in any of these regions. One R&D site. Global climate relevance."
 },
 {
   num: 2,
   icon: <Scale className="w-4 h-4" />,
   label: "Regulation",
   title: "Very low or no regulation for agricultural buildings",
-  desc: "South Africa's agricultural building environment carries minimal regulatory burden compared to Europe or North America. This dramatically accelerates construction timelines — reducing permit lead times, compliance costs, and the administrative friction that delays R&D programmes at comparable sites in more regulated jurisdictions. Speed-to-learn is a core competitive advantage at this stage of the innovation loop."
+  desc: "South Africa's agricultural building environment carries minimal regulatory burden compared to Europe or North America. This dramatically accelerates construction timelines â€” reducing permit lead times, compliance costs, and the administrative friction that delays R&D programmes at comparable sites in more regulated jurisdictions. Speed-to-learn is a core competitive advantage at this stage of the innovation loop."
 },
 {
   num: 3,
   icon: <Users className="w-4 h-4" />,
   label: "Labour",
   title: "Very low labour cost for non-specialised workers",
-  desc: "Philippi's local labour pool provides highly competitive rates for construction, operations, and general agricultural work. This makes the initial FarmLab and FarmBox1 build significantly more cost-effective — stretching investor capital further and reducing the cost basis for all operational benchmarking. Lower cost-per-data-point directly improves the R&D ROI."
+  desc: "Philippi's local labour pool provides highly competitive rates for construction, operations, and general agricultural work. This makes the initial FarmLab and FarmBox1 build significantly more cost-effective â€” stretching investor capital further and reducing the cost basis for all operational benchmarking. Lower cost-per-data-point directly improves the R&D ROI."
 },
 {
   num: 4,
@@ -53,10 +53,10 @@ const advantages = [
 
 
 const climateZones = [
-{ name: "Subtropical — Philippi baseline", markets: "Mediterranean basin · Coastal South America · Southern China · Coastal Australia · South Africa", color: "text-accent" },
-{ name: "Tropical adjacency", markets: "Southeast Asia · Central America · Sub-Saharan Africa · Northern Brazil", color: "text-yellow-600 dark:text-yellow-500" },
-{ name: "Temperate boundary", markets: "Western Europe · Eastern United States · Eastern China · New Zealand", color: "text-blue-400" },
-{ name: "Equatorial variant testing", markets: "East Africa · Indian subcontinent · Malaysia · Colombia", color: "text-orange-400" }];
+{ name: "Subtropical â€” Philippi baseline", markets: "Mediterranean basin Â· Coastal South America Â· Southern China Â· Coastal Australia Â· South Africa", color: "text-accent" },
+{ name: "Tropical adjacency", markets: "Southeast Asia Â· Central America Â· Sub-Saharan Africa Â· Northern Brazil", color: "text-yellow-600 dark:text-yellow-500" },
+{ name: "Temperate boundary", markets: "Western Europe Â· Eastern United States Â· Eastern China Â· New Zealand", color: "text-blue-400" },
+{ name: "Equatorial variant testing", markets: "East Africa Â· Indian subcontinent Â· Malaysia Â· Colombia", color: "text-orange-400" }];
 
 
 const PhilippiContent = () => {
@@ -70,7 +70,7 @@ const PhilippiContent = () => {
       {/* VIDEO */}
       <div className="rounded-2xl overflow-hidden border border-border">
         <video
-          src="/lovable-uploads/philippi-video.mp4"
+          src="/uploads/philippi-video.mp4"
           controls
           className="w-full"
           preload="metadata" />
@@ -113,8 +113,8 @@ const PhilippiContent = () => {
 
       {/* CLIMATE IN DEPTH */}
       <div>
-        <SectionHeading>Climate in Depth — One Site, Global Reach</SectionHeading>
-        <p className="text-lg leading-relaxed text-muted-foreground mt-4">The climate advantage deserves a particular attention. South Africa's Western Cape sits at the precise transition between subtropical and temperate bands — a position that mirrors the climate profile of the world's largest premium fresh food demand centres. This is a structural feature of the site selection that transforms Philippi into a globally valid R&D reference point.
+        <SectionHeading>Climate in Depth â€” One Site, Global Reach</SectionHeading>
+        <p className="text-lg leading-relaxed text-muted-foreground mt-4">The climate advantage deserves a particular attention. South Africa's Western Cape sits at the precise transition between subtropical and temperate bands â€” a position that mirrors the climate profile of the world's largest premium fresh food demand centres. This is a structural feature of the site selection that transforms Philippi into a globally valid R&D reference point.
 
         </p>
 
@@ -122,7 +122,7 @@ const PhilippiContent = () => {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
           <p className="text-[11px] font-mono font-medium tracking-widest uppercase text-accent mb-3 flex items-center gap-2">
             <span className="w-5 h-px bg-accent inline-block" />
-            Climate Positioning — Philippi as Global Proxy
+            Climate Positioning â€” Philippi as Global Proxy
           </p>
           <h3 className="text-xl font-serif italic font-light text-foreground mb-4 leading-snug">
             Subtropical Cape Town validates FarmBox for the world's highest-value food markets.

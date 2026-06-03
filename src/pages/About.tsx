@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import { Mail, Instagram, Twitter } from "lucide-react";
@@ -9,35 +9,35 @@ const boardMembers = [
     name: "Grant Horsfield",
     role: "Founder",
     bio: "Serial entrepreneur & UCT GSB MBA. Built global real estate portfolio + \"The Naked Retreat\" luxury hospitality disruptor. TEDx speaker with multimillion exits across China, South Africa, Europe",
-    image: "/lovable-uploads/dc6be22a-0a0f-4aef-b154-01b12f59311b.png",
+    image: "/uploads/dc6be22a-0a0f-4aef-b154-01b12f59311b.png",
     flagCode: "za",
   },
   {
     name: "Oliver Tittman",
     role: "test",
     bio: "MBA entrepreneur pioneering modular construction across 6 countries. XCUBE founder scaling prefab systems that cut deployment 50-80%. TEDx speaker standardizing hotels, housing, infrastructure.",
-    image: "/lovable-uploads/bfcee86e-a748-4d16-8ac2-c6a5d67246c1.jpg",
+    image: "/uploads/bfcee86e-a748-4d16-8ac2-c6a5d67246c1.jpg",
     flagCode: ["be", "us"],
   },
   {
     name: "Francesco Gaudioso",
     role: "Head of Technology",
     bio: "Mechanical and Energy Engineer driving innovation across OEM projects, off-grid tech, and ocean adventures.",
-    image: "/lovable-uploads/3ad422b8-63a9-49e7-96ea-52557ec23949.jpg",
+    image: "/uploads/3ad422b8-63a9-49e7-96ea-52557ec23949.jpg",
     flagCode: "it",
   },
   {
     name: "Frederick Steinmeyer",
     role: "Head of Life",
     bio: "Test",
-    image: "/lovable-uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
+    image: "/uploads/6d7ee304-e5db-4a64-bd3b-ad13d67178ef.jpg",
     flagCode: ["de", "za"],
   },
   {
     name: "Natalia Ozerova-Jones",
     role: "Chief Executive Officer",
     bio: "test",
-    image: "/lovable-uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
+    image: "/uploads/985ef160-a7aa-4cb0-93f1-35cc83bf0b96.jpg",
     flagCode: "ru",
   },
   {
@@ -51,14 +51,14 @@ const boardMembers = [
     name: "Abigail Rutter",
     role: "Executive Assistant",
     bio: "Experienced executive assistant with a background in farming operations and private family office management, bringing organizational excellence to agricultural ventures.",
-    image: "/lovable-uploads/abigail-rutter.jpeg",
+    image: "/uploads/abigail-rutter.jpeg",
     flagCode: "gb",
   },
   {
     name: "Jason Karas",
     role: "Legal Counsel",
     bio: "Seasoned international lawyer with extensive commercial experience.",
-    image: "/lovable-uploads/jason-karas.jpeg",
+    image: "/uploads/jason-karas.jpeg",
     flagCode: "hk",
   },
 ];
@@ -88,7 +88,7 @@ const About = () => {
           <img
             alt="Aerial view of Toa atoll in French Polynesia"
             className="w-full h-auto object-cover rounded-2xl"
-            src="/lovable-uploads/27fcc19c-c6af-4bea-ad66-0689f4b39b81.jpg"
+            src="/uploads/27fcc19c-c6af-4bea-ad66-0689f4b39b81.jpg"
           />
         </section>
 
